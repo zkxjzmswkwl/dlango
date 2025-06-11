@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dlango
+dlango.so
+dlango.dylib
+dlango.dll
+dlango.a
+dlango.lib
+dlango-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
