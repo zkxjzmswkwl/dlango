@@ -5,6 +5,7 @@ import std.array;
 import std.stdio;
 import std.logger;
 import http.request;
+import common.types;
 
 class HttpServer {
     private TcpSocket socket;
@@ -13,10 +14,9 @@ class HttpServer {
         import std.conv : to;
 
         this.socket = new TcpSocket();
-        this.socket.bind(new InternetAddress("127.0.0.1", 8080));
+        this.socket.bind(new InternetAddress("127.0.0.1", 8081));
         this.socket.listen(10);
         info("Server is running on http://127.0.0.1:8080");
-        info("Press Ctrl+C to stop the server");
         while (true) {
             // yay new friend
             auto client = this.socket.accept();
@@ -45,6 +45,13 @@ class HttpServer {
         auto method = lines[0].split(" ")[0];
         auto path = lines[0].split(" ")[1];
         auto httpVersion = lines[0].split(" ")[2];
+        Headers headers;
+        foreach (line; lines[1..$]) {
+            auto header = line.split(": ");
+            // (carter): TODO: not adequately handling header values that contain colons
+            if (header.length < 2) break;
+            headers[header[0]] = header[1];
+        }
         /// ew!
         auto body = cast(ubyte[])lines[1..$].join("\r\n");
 
