@@ -8,6 +8,7 @@ class HttpRequest {
     private Encoding encoding;
     private Headers _headers;
     private Cookies _cookies;
+    private string _path;
     enum Method {
         GET,
         POST,
@@ -19,7 +20,6 @@ class HttpRequest {
         TRACE
     }
     private Method method;
-    private string path;
     private string httpVersion;
     // temporary
     private ubyte[] body;
@@ -30,11 +30,11 @@ class HttpRequest {
     private string[string] postData;
     private string[string] getData;
 
-    this(Method method, string path, string httpVersion, ubyte[] body) {
+    this(Method method, string path, string httpVersion, Headers headers) {
         this.method = method;
-        this.path = path;
+        this._path = path;
         this.httpVersion = httpVersion;
-        this.body = body;
+        this._headers = headers;
     }
 
     /// (carter):
@@ -47,6 +47,9 @@ class HttpRequest {
     Cookies cookies() { return this._cookies; }
 
     @property
+    string path() { return this._path; }
+
+    @property
     string[string] form() { return this.postData; }
 
     @property
@@ -56,6 +59,6 @@ class HttpRequest {
         return "HttpRequest(method: %s, path: %s, httpVersion: %s, body: %s)".format(this.method,
                                                                                      this.path,
                                                                                      this.httpVersion,
-                                                                                     this.body.to!string);
+                                                                                     this._headers.toString());
     }
 }

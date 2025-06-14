@@ -7,4 +7,4 @@ Personally I won't be using AI assistance for code generation or linting, with p
 I want to refrain from using AI assistance for code generation and linting because I enjoy programming. I enjoy not knowing and I enjoy figuring it out on my own. I acknowledge that this will make the project take longer. I'm fine with that.
 
 ## Compiler
-Only ~~promise~~ *hope* this will compile with ldc2. DMD has never treated me right.
+Only ~~promise~~ *hope* is that this will compile with ldc2. DMD has never treated me right.
