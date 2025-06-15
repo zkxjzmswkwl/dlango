@@ -3,7 +3,11 @@
 		"carter"
 	],
 	"copyright": "Copyright © 2025, Carter",
+	"dependencies": {
+		"d2sqlite3": "~>1.0.0"
+	},
 	"description": "A minimal D application.",
 	"license": "fuckit",
-	"name": "dlango"
+	"name": "dlango",
+	"libs": ["sqlite3"]
 }

@@ -2,6 +2,7 @@ module views.generic.view;
 
 import std.logger;
 import http.request;
+import views.generic.errors;
 
 class View {
     private string path;
@@ -12,9 +13,8 @@ class View {
         this.allowedMethods = allowedMethods;
 
         if (allowedMethods.length == 0) {
-            warning("No allowed methods provided for view at path: %s, as such no requests will be allowed.", path);
+            warning(ViewErrors.NO_ALLOWED_METHODS, path);
         }
     }
-
     // void dispatch()
 }
