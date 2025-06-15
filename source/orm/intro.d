@@ -1,5 +1,7 @@
 module orm.intro;
 
+import std.meta;
+import std.traits;
 import std.string : toLower;
 
 struct FieldInfo {
@@ -12,17 +14,20 @@ template ModelInfo(T) {
     enum tableName = toLower(T.stringof);
 
     static FieldInfo[] getFields() {
-        import std.meta;
-        import std.traits;
-
         FieldInfo[] fields;
 
         static foreach (name; __traits(allMembers, T)) {
             static if (name[0] != '_') {
-                alias MemberType = typeof(getMember(T.init, name));
-                string nativeTypeName = MemberType.stringof;
-                string sqlTypeName = mapToSqlType!MemberType;
-                fields ~= FieldInfo(name, nativeTypeName, sqlTypeName);
+                static if (is(typeof(__traits(getMember, T, name)))) {
+                    {
+                        alias MemberType = typeof(__traits(getMember, T, name));
+                        static if (__traits(compiles, mapToSqlType!MemberType)) {
+                            string nativeTypeName = MemberType.stringof;
+                            string sqlTypeName = mapToSqlType!MemberType;
+                            fields ~= FieldInfo(name, nativeTypeName, sqlTypeName);
+                        }
+                    }
+                }
             }
         }
         return fields;
