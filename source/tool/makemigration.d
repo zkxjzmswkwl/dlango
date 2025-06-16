@@ -78,12 +78,8 @@ void makeMigrationsEntry() {
         if (!entry.name.endsWith(".d")) {
             continue;
         }
-        /// (carter): This won't work on anything except x64 windows for now.
-        version (Win64) {
-            /// (carter): split by \ because windows.
-            import std.array;
-            lastMigrationNum = max(lastMigrationNum, to!long(entry.name.split('\\')[1][1..5]));
-        }
+        import std.path : baseName;
+        lastMigrationNum = max(lastMigrationNum, to!long(baseName(entry.name)[1..5]));
     }
     string newNum = format("d%04d", lastMigrationNum + 1);
     string desc = "Initial";

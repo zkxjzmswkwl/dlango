@@ -33,7 +33,7 @@ string generateMigrationRunner() {
     formattedWrite(code, "    final switch(name) {\n");
     foreach(name; migrationNames) {
         if (name.to!string.length == 0) continue;
-        string classNum = name.to!string[0..5];
+        string classNum = name.to!string[0..5].replace("\r", "").replace("\n", "");
         formattedWrite(code, "        case \"%s\":\n", name);
         formattedWrite(code, "            auto m = new Migration_%s();\n", classNum);
         formattedWrite(code, "            m.up(db);\n");
@@ -71,7 +71,8 @@ void migrate() {
     string[] pendingMigrations;
     foreach (entry; dirEntries("source/migrations", SpanMode.shallow)) {
         if (entry.name.endsWith(".d")) {
-            auto migrationName = entry.name.split("\\")[$-1][0..$-2];
+            auto migrationName = entry.name.replace("\\", "/");
+            migrationName = entry.name.split("/")[$-1][0..$-2];
             writeln(migrationName);
             pendingMigrations ~= migrationName;
         }
