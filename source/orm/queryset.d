@@ -82,7 +82,6 @@ struct QuerySet(T) {
                 case "isnull":
                     clause = field ~ " IS NULL";
                     break;
-                case "isnotnull":
             }
             newQs._whereClauses ~= clause;
             newQs._whereParams ~= param;

@@ -44,5 +44,19 @@ foreach (user; filtered) {
 // Output: retrac retrac@gmail.com 1
 ```
 
+### Field lookups
+As you may have noticed, field lookups are currently very similar to Django field lookups.
+- `exact`: Field must exactly match the value.
+- `iexact`: Case-insensitive exact match (value is lowercased before comparison).
+- `contains`: Field contains the value (uses `LIKE '%value%'`).
+- `gt`: Greater than (`>`).
+- `gte`: Greater than or equal (`>=`).
+- `lt`: Less than (`<`).
+- `lte`: Less than or equal (`<=`).
+- `startswith`: Field starts with the value (uses `LIKE 'value%'`).
+- `endswith`: Field ends with the value (uses `LIKE '%value'`).
+- `in`: Field value must be in a given list (uses `IN`).
+- `isnull`: Field must be NULL (uses `IS NULL`).
+
 ## Compiler
 Only ~~promise~~ *hope* is that this will compile with ldc2. DMD has never treated me right.
