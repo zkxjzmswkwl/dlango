@@ -1,6 +1,5 @@
 module tool.migrate;
 
-import orm.migration;
 import d2sqlite3;
 import std.array;
 import std.range;
@@ -8,19 +7,10 @@ import std.conv;
 import std.file;
 import std.stdio;
 import std.algorithm;
-
-class SQLiteConnection : DbConnection {
-    private string dbPath;
-    private Database db;
-    this(string dbPath) {
-        this.dbPath = dbPath;
-        this.db = Database(dbPath);
-    }
-
-    ResultRange execute(string sql) {
-        return db.execute(sql);
-    }
-}
+import orm.db;
+import orm.migration;
+import orm.queryset;
+import orm.db : getDbConnection;
 
 string generateMigrationRunner() {
     import std.array : appender;
@@ -61,7 +51,7 @@ pragma(msg, generateMigrationRunner());
 mixin(generateMigrationRunner());
 
 void migrate() {
-    auto db = new SQLiteConnection("test.db");
+    auto db = getDbConnection();
 
     db.execute(`
         CREATE TABLE IF NOT EXISTS dlango_migrations (

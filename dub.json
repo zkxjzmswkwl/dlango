@@ -5,7 +5,10 @@
 	"copyright": "Copyright © 2025, Carter",
 	"dependencies": {
 		"asdf": "~>0.7.17",
-		"d2sqlite3": "~>1.0.0"
+		"d2sqlite3": {
+			"repository": "git+https://github.com/zkxjzmswkwl/d2sqlite3.git",
+			"version": "~v1.x.x"
+		}
 	},
 	"description": "A minimal D application.",
 	"libs": [

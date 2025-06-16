@@ -25,6 +25,7 @@ struct AddColumn {
 }
 
 void makeMigrationsEntry() {
+    string snapshotPath = ".orm_snapshot.json";
     ProjectSchema currentState;
     ModelSchema modelSchema;
     static foreach (T; AllModels) {
@@ -34,11 +35,9 @@ void makeMigrationsEntry() {
         }
         currentState[ModelInfo!T.tableName] = modelSchema;
     }
-    currentState.toJSON.writeln;
 
     // load snapshot
     ProjectSchema snapshotState;
-    string snapshotPath = ".orm_snapshot.json";
     if (exists(snapshotPath)) {
         snapshotState = readText(snapshotPath).deserialize!ProjectSchema;
     } else {
@@ -83,8 +82,7 @@ void makeMigrationsEntry() {
         version (Win64) {
             /// (carter): split by \ because windows.
             import std.array;
-            writeln(entry.name);
-            lastMigrationNum = max(lastMigrationNum, to!long(entry.name.split('\\')[$-1][0..4]));
+            lastMigrationNum = max(lastMigrationNum, to!long(entry.name.split('\\')[1][1..5]));
         }
     }
     string newNum = format("d%04d", lastMigrationNum + 1);
@@ -97,16 +95,19 @@ void makeMigrationsEntry() {
 
     formattedWrite(code, "module migrations.%s;\n\n", migrationName[0..$-2]);
     formattedWrite(code, "import orm.migration;\n\n");
+    formattedWrite(code, "import orm.db;\n\n");
     formattedWrite(code, "class Migration_%s : Migration {\n", newNum);
     formattedWrite(code, "    override void up(DbConnection db) {\n");
     foreach(change; changes) {
         writeln(change);
         change.visit!(
             (CreateTable ct) => formattedWrite(code,
-                "        db.execute(`CREATE TABLE %s (id INTEGER PRIMARY KEY AUTOINCREMENT, %s)`);\n",
+                "        db.execute(`CREATE TABLE %s (%s)`);\n",
                 ct.tableName,
                 ct.modelSchema.fields.byKeyValue.map!(
-                    kv => format(" %s %s NOT NULL", kv.key, kv.value.sqlType)
+                    kv => kv.key == "id" ? 
+                        format(" %s %s NOT NULL PRIMARY KEY AUTOINCREMENT", kv.key, kv.value.sqlType) :
+                        format(" %s %s NOT NULL", kv.key, kv.value.sqlType)
                 ).join(", ")
             ),
             (AddColumn ac) => formattedWrite(code,
@@ -134,4 +135,5 @@ void makeMigrationsEntry() {
         manifestFile.close();
     }
     writeln("Updated manifest file.");
+    std.file.write(snapshotPath, currentState.toJSON().to!string);
 }

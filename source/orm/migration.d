@@ -1,10 +1,7 @@
 module orm.migration;
 
 import d2sqlite3;
-
-interface DbConnection {
-    ResultRange execute(string sql);
-}
+import orm.db;
 
 abstract class Migration {
     void up(DbConnection db);

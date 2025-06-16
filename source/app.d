@@ -5,20 +5,23 @@ import http.request;
 import http.response;
 import common.types;
 import orm.models;
-import orm.manager;
-import std.traits;
-import testsql;
-import orm.state.snapshot;
-import orm.schema;
 import tool.makemigration;
 import tool.migrate;
-
 
 string getIndexHTML() {
 	return readText("test/index.html");
 }
 
+void testORM() {
+	// User user = User("carter", "carter@gmail.com", "password");
+	// user.save();
+    User user2 = User.objects.get("username = ?", "carter");
+	writeln(user2.username, " ", user2.email, " ", user2.ID);
+}
+
 void run() {
+
+
 	RequestHandler[string] routes;
 	routes["/"] = (request) {
 		return new HttpResponse(HttpStatus(200, "OK"), new Headers(), getIndexHTML());
@@ -31,10 +34,21 @@ void run() {
 
 void main(string[] args) {
 	import std.conv : to;
-	if (args.length == 2 && args[1] == "makemigrations")
-		makeMigrationsEntry();
-	else if (args.length == 2 && args[1] == "migrate") {
-		migrate();
+	if (args.length == 2) {
+		switch (args[1]) {
+			case "makemigrations":
+				makeMigrationsEntry();
+				break;
+			case "migrate":
+				migrate();
+				break;
+			case "orm":
+				testORM();
+				break;
+			default:
+				run();
+				break;
+		}
 	} else {
 		run();
 	}
