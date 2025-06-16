@@ -17,7 +17,7 @@ template ModelInfo(T) {
         FieldInfo[] fields;
 
         static foreach (name; __traits(allMembers, T)) {
-            static if (name[0] != '_') {
+            static if (name[0] != '_' && name != "objects" && name != "save" && name != "ID") {
                 static if (is(typeof(__traits(getMember, T, name)))) {
                     {
                         alias MemberType = typeof(__traits(getMember, T, name));

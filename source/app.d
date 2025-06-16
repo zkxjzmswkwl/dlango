@@ -7,21 +7,25 @@ import common.types;
 import orm.models;
 import tool.makemigration;
 import tool.migrate;
+import orm.q : Q;
 
 string getIndexHTML() {
 	return readText("test/index.html");
 }
 
 void testORM() {
-	// User user = User("carter", "carter@gmail.com", "password");
-	// user.save();
-    User user2 = User.objects.get("username = ?", "carter");
-	writeln(user2.username, " ", user2.email, " ", user2.ID);
+User("retrac", "retrac@gmail.com", "password").save();
+
+auto filtered = User.objects.filter([
+	Q("email__iexact", "RETRAC@gmail.com")
+]);
+
+foreach (user; filtered) {
+	writeln(user.username, " ", user.email, " ", user.ID);
+}
 }
 
 void run() {
-
-
 	RequestHandler[string] routes;
 	routes["/"] = (request) {
 		return new HttpResponse(HttpStatus(200, "OK"), new Headers(), getIndexHTML());

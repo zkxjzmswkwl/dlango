@@ -99,14 +99,13 @@ void makeMigrationsEntry() {
     formattedWrite(code, "class Migration_%s : Migration {\n", newNum);
     formattedWrite(code, "    override void up(DbConnection db) {\n");
     foreach(change; changes) {
-        writeln(change);
         change.visit!(
             (CreateTable ct) => formattedWrite(code,
                 "        db.execute(`CREATE TABLE %s (%s)`);\n",
                 ct.tableName,
                 ct.modelSchema.fields.byKeyValue.map!(
                     kv => kv.key == "id" ? 
-                        format(" %s %s NOT NULL PRIMARY KEY AUTOINCREMENT", kv.key, kv.value.sqlType) :
+                        format(" %s %s NOT NULL PRIMARY KEY", kv.key, kv.value.sqlType) :
                         format(" %s %s NOT NULL", kv.key, kv.value.sqlType)
                 ).join(", ")
             ),

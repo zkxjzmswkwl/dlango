@@ -25,4 +25,8 @@ struct Manager(T) {
     auto get(Args...)(string clause, Args params) {
         return all().get(clause, params);
     }
+
+    auto filter(Args...)(Args criteria) {
+        return all().filter(criteria);
+    }
 }

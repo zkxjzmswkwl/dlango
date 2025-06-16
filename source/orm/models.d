@@ -26,13 +26,13 @@ template Model(T) {
             DbValue[] values;
 
             static foreach(member; __traits(allMembers, typeof(this))) {
-                static if (member != "id" && member != "objects" && member != "save" && member[0] != '_') {
+                static if (member != "id" && member != "objects" && member != "save" && member[0] != '_' && member != "ID") {
                     columns ~= member;
                     placeholders ~= "?";
                     mixin("values ~= DbValue(this." ~ member ~ ");");
                 }
             }
-            
+
             string sql = "INSERT INTO " ~ ModelInfo!(typeof(this)).tableName ~ 
                          " (" ~ columns.join(", ") ~ ") VALUES (" ~ placeholders.join(", ") ~ ");";
             
