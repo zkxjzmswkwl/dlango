@@ -1,1 +1,116 @@
-{"models":{"user":{"fields":{"email":{"nativeType":"string","sqlType":"TEXT"},"username":{"nativeType":"string","sqlType":"TEXT"},"password":{"nativeType":"string","sqlType":"TEXT"},"id":{"nativeType":"long","sqlType":"INTEGER"},"createdAt":{"nativeType":"long","sqlType":"INTEGER"}}},"game":{"fields":{"description":{"nativeType":"string","sqlType":"TEXT"},"category":{"nativeType":"string","sqlType":"TEXT"},"id":{"nativeType":"long","sqlType":"INTEGER"},"price":{"nativeType":"string","sqlType":"TEXT"},"name":{"nativeType":"string","sqlType":"TEXT"}}},"product":{"fields":{"description":{"nativeType":"string","sqlType":"TEXT"},"category":{"nativeType":"string","sqlType":"TEXT"},"id":{"nativeType":"long","sqlType":"INTEGER"},"price":{"nativeType":"string","sqlType":"TEXT"},"name":{"nativeType":"string","sqlType":"TEXT"}}},"song":{"fields":{"year":{"nativeType":"int","sqlType":"INTEGER"},"id":{"nativeType":"long","sqlType":"INTEGER"},"genre":{"nativeType":"string","sqlType":"TEXT"},"title":{"nativeType":"string","sqlType":"TEXT"},"artist":{"nativeType":"string","sqlType":"TEXT"},"duration":{"nativeType":"int","sqlType":"INTEGER"},"album":{"nativeType":"string","sqlType":"TEXT"},"description":{"nativeType":"string","sqlType":"TEXT"},"path":{"nativeType":"string","sqlType":"TEXT"}}}}}
+{
+    "models": {
+        "user": {
+            "fields": {
+                "email": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "username": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "password": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "id": {
+                    "nativeType": "long",
+                    "sqlType": "INTEGER"
+                },
+                "createdAt": {
+                    "nativeType": "long",
+                    "sqlType": "INTEGER"
+                }
+            }
+        },
+        "game": {
+            "fields": {
+                "description": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "category": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "id": {
+                    "nativeType": "long",
+                    "sqlType": "INTEGER"
+                },
+                "price": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "name": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                }
+            }
+        },
+        "product": {
+            "fields": {
+                "description": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "category": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "id": {
+                    "nativeType": "long",
+                    "sqlType": "INTEGER"
+                },
+                "price": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "name": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                }
+            }
+        },
+        "song": {
+            "fields": {
+                "year": {
+                    "nativeType": "int",
+                    "sqlType": "INTEGER"
+                },
+                "id": {
+                    "nativeType": "long",
+                    "sqlType": "INTEGER"
+                },
+                "genre": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "title": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "artist": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "duration": {
+                    "nativeType": "int",
+                    "sqlType": "INTEGER"
+                },
+                "album": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "description": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                },
+                "path": {
+                    "nativeType": "string",
+                    "sqlType": "TEXT"
+                }
+            }
+        }
+    }
+}

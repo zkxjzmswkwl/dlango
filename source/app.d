@@ -14,15 +14,9 @@ string getIndexHTML() {
 }
 
 void testORM() {
-User("retrac", "retrac@gmail.com", "password").save();
-
-auto filtered = User.objects.filter([
-	Q("email__iexact", "RETRAC@gmail.com")
-]);
-
-foreach (user; filtered) {
-	writeln(user.username, " ", user.email, " ", user.ID);
-}
+	for (int i = 0; i < 10_000; i++) {
+		User("retrac", "retrac@gmail.com", "password").save();
+	}
 }
 
 void run() {
