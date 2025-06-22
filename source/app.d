@@ -14,6 +14,9 @@ string getIndexHTML() {
 }
 
 void testORM() {
+	// (carter): no batching of queries, so this takes ages!
+	// (carter): this will still take ages when there *are* batched queries,
+	// (carter): they'll just be an alternative to this.
 	for (int i = 0; i < 10_000; i++) {
 		User("retrac", "retrac@gmail.com", "password").save();
 	}
