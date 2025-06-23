@@ -1,6 +1,8 @@
 # Dlango
 I really like Django, but I'm not in love with Python. It's nice. D is better.
 
+If you would like to talk about the project, join the official [Dlang Discord](https://discord.gg/abu7BnnBZ7) and ping me (`._carter`) in either `#webdev` or `#programming`.
+
 ## Constraints for the sake of constraints
 Personally I won't be using AI assistance for code generation or linting, with perhaps one exception--security. In my view, not augmenting security audits with powerful tools is foolish. 
 
