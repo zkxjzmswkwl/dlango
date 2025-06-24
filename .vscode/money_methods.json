@@ -1,0 +1,4307 @@
+[
+  {
+    "id": 1,
+    "title": "Killing Telos, the Warden (200 Killstreak at 4k)",
+    "profit": 212223000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 2,
+    "title": "Killing Telos, the Warden (200 Killstreak)",
+    "profit": 186334000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 3,
+    "title": "Sanctum of Rebirth (Hard Mode)",
+    "profit": 181149000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 4,
+    "title": "Killing Zamorak, Lord of Chaos (2000 enrage)",
+    "profit": 130131000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 5,
+    "title": "Killing Nex: Angel of Death (Duo)",
+    "profit": 113771000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 6,
+    "title": "Killing TzKal-Zuk (Hard mode)",
+    "profit": 110484000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 7,
+    "title": "Killing Nex: Angel of Death (Solo)",
+    "profit": 98585000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 8,
+    "title": "Killing Telos, the Warden (2449 Enrage Claims)",
+    "profit": 95634000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 9,
+    "title": "Killing the Arch-Glacor (Hard Mode 200 killstreak)",
+    "profit": 91532000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 10,
+    "title": "Killing Nex: Angel of Death (4-player)",
+    "profit": 83640000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 11,
+    "title": "Barrows: Rise of the Six",
+    "profit": 72627000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 12,
+    "title": "Killing Rasial, the First Necromancer",
+    "profit": 71029000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 13,
+    "title": "Killing Zemouregal & Vorkath (Hard Mode)",
+    "profit": 70934000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 14,
+    "title": "Killing Nex: Angel of Death (7-player)",
+    "profit": 68285000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 15,
+    "title": "Defeating Croesus (Duo)",
+    "profit": 67355000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 16,
+    "title": "Killing TzKal-Zuk (Normal mode)",
+    "profit": 66475000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 17,
+    "title": "Killing Zamorak, Lord of Chaos (500 enrage)",
+    "profit": 58564000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 18,
+    "title": "Killing ripper demons",
+    "profit": 58038000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 19,
+    "title": "Killing Solak",
+    "profit": 53855000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 20,
+    "title": "Killing Zamorak, Lord of Chaos (300 enrage)",
+    "profit": 53463000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 21,
+    "title": "Defeating Croesus (4-person)",
+    "profit": 52763000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 22,
+    "title": "Cleansing the Gate of Elidinis",
+    "profit": 50106000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 23,
+    "title": "Killing Kerapac, the bound (Solo hard mode)",
+    "profit": 49826000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 24,
+    "title": "Killing Raksha",
+    "profit": 49421000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 25,
+    "title": "Killing Zamorak, Lord of Chaos (100 enrage)",
+    "profit": 49223000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 26,
+    "title": "Killing Zemouregal & Vorkath (Normal Mode)",
+    "profit": 48713000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 27,
+    "title": "Killing the Arch-Glacor (Hard Mode streaking)",
+    "profit": 46036000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 28,
+    "title": "Killing Araxxi",
+    "profit": 43147000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 29,
+    "title": "Crafting cosmic runes through the Abyss",
+    "profit": 42486000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 30,
+    "title": "ED2 - Dragonkin Laboratory (Solo)",
+    "profit": 42443000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 31,
+    "title": "Crafting astral runes through the Abyss",
+    "profit": 40841000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 32,
+    "title": "Crafting nature runes through the Abyss",
+    "profit": 38039000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 33,
+    "title": "Making extra fine sand with Telekinetic Grind",
+    "profit": 37752000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 34,
+    "title": "Killing Zamorak, Lord of Chaos (50 enrage)",
+    "profit": 37339000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 35,
+    "title": "Crafting blood runes through the Abyss (with catalytic anima stones)",
+    "profit": 36374000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 36,
+    "title": "Crafting water runes through the Abyss",
+    "profit": 35435000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 37,
+    "title": "Killing Kerapac, the bound (Duo hard mode)",
+    "profit": 35191000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 38,
+    "title": "Killing Telos, the Warden (999 Enrage Claims)",
+    "profit": 35025000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 39,
+    "title": "ED1 - Temple of Aminishi (Solo)",
+    "profit": 33408000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 40,
+    "title": "Crafting law runes through the Abyss",
+    "profit": 33038000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 41,
+    "title": "Crafting necrotic runes (Spirit runes)",
+    "profit": 33025000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 42,
+    "title": "Crafting necrotic runes (Miasma runes)",
+    "profit": 32254000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 43,
+    "title": "ED3 - Shadow Reef (Solo)",
+    "profit": 31353000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 44,
+    "title": "Killing the Arch-Glacor (Hard Mode 1000 percent enrage claims)",
+    "profit": 31303000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 45,
+    "title": "Crafting blood runes through the Abyss (without catalytic anima stones)",
+    "profit": 30654000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 46,
+    "title": "Crafting fire runes through the Abyss",
+    "profit": 29770000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 47,
+    "title": "Killing moss golems (On Task)",
+    "profit": 29561000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 48,
+    "title": "Killing Dagannoth Kings (High Level)",
+    "profit": 28701000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 49,
+    "title": "Killing Kerapac, the bound (Trio hard mode)",
+    "profit": 28181000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 50,
+    "title": "Crafting time runes through the Abyss",
+    "profit": 27564000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 51,
+    "title": "Crafting air runes through the Abyss",
+    "profit": 26879000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 52,
+    "title": "Killing blood reavers",
+    "profit": 26473000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 53,
+    "title": "Big Game Hunter (Tier 2 dinosaurs)",
+    "profit": 26430000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 54,
+    "title": "Crafting death runes through the Abyss",
+    "profit": 26412000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 55,
+    "title": "Crafting necrotic runes (Bone runes)",
+    "profit": 24848000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 56,
+    "title": "Opening alchemist's chests",
+    "profit": 24661000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 57,
+    "title": "Crafting necrotic runes (Flesh runes)",
+    "profit": 24063000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 58,
+    "title": "Killing hellhounds",
+    "profit": 23942000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 59,
+    "title": "Crafting dust runes (Earth altar with hot air balloon)",
+    "profit": 22971000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 60,
+    "title": "Killing the Kalphite King (Solo)",
+    "profit": 22846000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 61,
+    "title": "Killing Nex",
+    "profit": 21890000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 62,
+    "title": "ED2 - Dragonkin Laboratory (Duo)",
+    "profit": 21433000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 63,
+    "title": "Making super Saradomin brew flasks",
+    "profit": 21088000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 64,
+    "title": "Making aggression potions",
+    "profit": 20866000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 65,
+    "title": "Killing Vorago (Solo)",
+    "profit": 20836000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 66,
+    "title": "Killing legiones to make ascension crossbows",
+    "profit": 20397000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 67,
+    "title": "Crafting dust runes (Air altar)",
+    "profit": 20099000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 68,
+    "title": "Big Game Hunter (Tier 1 dinosaurs)",
+    "profit": 19957000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 69,
+    "title": "Killing the Arch-Glacor (Hard Mode 0 percent enrage claims)",
+    "profit": 19721000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 70,
+    "title": "Catching whirligigs (dazzling)",
+    "profit": 19570000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 71,
+    "title": "Killing Kerapac, the bound (Solo normal mode using Necromancy)",
+    "profit": 19045000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 72,
+    "title": "Killing Helwyr (High Level)",
+    "profit": 17699000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 73,
+    "title": "Killing Dagannoth Kings (Mid Level)",
+    "profit": 17342000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 74,
+    "title": "Making weapon poison+++",
+    "profit": 16998000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 75,
+    "title": "ED3 - Shadow Reef (Duo)",
+    "profit": 16720000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 76,
+    "title": "ED3 - Shadow Reef (Trio)",
+    "profit": 16383000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 77,
+    "title": "Killing Kerapac, the bound (Normal mode)",
+    "profit": 16281000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 78,
+    "title": "Making spiritual prayer potions",
+    "profit": 16276000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 79,
+    "title": "Killing the Kalphite King (Duo)",
+    "profit": 16043000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 80,
+    "title": "Big Game Hunter (Tier 3 dinosaurs)",
+    "profit": 15555000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 81,
+    "title": "Killing Rex Matriarchs (Pthentraken)",
+    "profit": 15487000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 82,
+    "title": "Screening soil using Sift Soil (Ancient gravel)",
+    "profit": 15400000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 83,
+    "title": "Screening soil using Sift Soil (Saltwater mud)",
+    "profit": 14502000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 84,
+    "title": "Killing the Twin Furies (High Level)",
+    "profit": 14420000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 85,
+    "title": "Killing elite profane scabarites (AFK)",
+    "profit": 14344000,
+    "category": "Combat/Medium",
+    "intensity": "Very Low"
+  },
+  {
+    "id": 86,
+    "title": "Crafting decorated urns",
+    "profit": 14095000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 87,
+    "title": "Killing the Giant Mimic (Elite)",
+    "profit": 14023000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 88,
+    "title": "Making summoning potions",
+    "profit": 13970000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 89,
+    "title": "Killing lava strykewyrms",
+    "profit": 13564000,
+    "category": "Combat/Mid",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 90,
+    "title": "Making weapon poison++",
+    "profit": 13507000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 91,
+    "title": "Screening soil using Sift Soil (Earthen clay)",
+    "profit": 13418000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 92,
+    "title": "Killing Gregorovic (High Level)",
+    "profit": 12726000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 93,
+    "title": "Making sacred oil",
+    "profit": 12573000,
+    "category": "Combat/Mid",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 94,
+    "title": "Crafting astral runes",
+    "profit": 12462000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 95,
+    "title": "Making super prayer renewal potions",
+    "profit": 12394000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 96,
+    "title": "Making primal extracts (112 Herblore)",
+    "profit": 12348000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 97,
+    "title": "Killing Osseous",
+    "profit": 12218000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 98,
+    "title": "Running the Anachronia Agility Course for codex pages",
+    "profit": 12150000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 99,
+    "title": "Tanning hides (Royal dragonhide)",
+    "profit": 12094000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 100,
+    "title": "Killing vinecrawlers",
+    "profit": 11846000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 101,
+    "title": "Killing Rex Matriarchs (Orikalka)",
+    "profit": 11832000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 102,
+    "title": "Killing nightmares",
+    "profit": 11601000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 103,
+    "title": "ED2 - Dragonkin Laboratory (Trio)",
+    "profit": 11429000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 104,
+    "title": "Collecting dinosaur 'propellant'",
+    "profit": 11399000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 105,
+    "title": "Screening soil using Sift Soil (Aerated sediment)",
+    "profit": 11296000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 106,
+    "title": "Tanning hides (Black dragonhide)",
+    "profit": 11054000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 107,
+    "title": "Killing kal'gerion demons",
+    "profit": 11020000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 108,
+    "title": "Collecting sharp shell shards",
+    "profit": 10954000,
+    "category": "Collecting",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 109,
+    "title": "Making super antipoisons",
+    "profit": 10937000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 110,
+    "title": "Killing abyssal lords",
+    "profit": 10874000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 111,
+    "title": "Killing Vorago (Duo)",
+    "profit": 10841000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 112,
+    "title": "Killing the Magister",
+    "profit": 10834000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 113,
+    "title": "Screening soil using Sift Soil (Volcanic ash)",
+    "profit": 10804000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 114,
+    "title": "Screening soil using Sift Soil (Fiery brimstone)",
+    "profit": 10580000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 115,
+    "title": "Opening muddy chests (Pack yak)",
+    "profit": 9794000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 116,
+    "title": "Making super defence potions",
+    "profit": 9583000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 117,
+    "title": "Killing corrupted scorpions (On Slayer task)",
+    "profit": 9557000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 118,
+    "title": "Screening ancient gravel (P2P)",
+    "profit": 9385000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 119,
+    "title": "Creating small classic and large historic crates",
+    "profit": 9372000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 120,
+    "title": "Hunting igneous jadinkos",
+    "profit": 9254000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 121,
+    "title": "Killing Vorago (Trio)",
+    "profit": 9209000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 122,
+    "title": "Killing Vindicta (High Level)",
+    "profit": 9169000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 123,
+    "title": "Making large historic component crates",
+    "profit": 9069000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 124,
+    "title": "Killing abyssal beasts",
+    "profit": 8965000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 125,
+    "title": "Killing the Corporeal Beast",
+    "profit": 8872000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 126,
+    "title": "Tanning hides (Green dragonhide)",
+    "profit": 8654000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 127,
+    "title": "Killing unspeakable horrors",
+    "profit": 8618000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 128,
+    "title": "Screening saltwater mud",
+    "profit": 8614000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 129,
+    "title": "Sanctum of Rebirth (Normal Mode)",
+    "profit": 8586000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 130,
+    "title": "Killing capsarii",
+    "profit": 8575000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 131,
+    "title": "Killing crystal shapeshifters",
+    "profit": 8434000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 132,
+    "title": "Catching whirligigs (gliding)",
+    "profit": 8383000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 133,
+    "title": "Collecting dinosaur eggs from seggregation",
+    "profit": 8371000,
+    "category": "Collecting",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 134,
+    "title": "Looting Shifting Tombs (Chests only)",
+    "profit": 8362000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 135,
+    "title": "Making super strength potions",
+    "profit": 8274000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 136,
+    "title": "Making Saradomin brews",
+    "profit": 8025000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 137,
+    "title": "Screening earthen clay",
+    "profit": 7929000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 138,
+    "title": "High level Barrows",
+    "profit": 7889000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 139,
+    "title": "Killing moss golems",
+    "profit": 7861000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 140,
+    "title": "Making refined planks at Fort Forinthry (Elder)",
+    "profit": 7811000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 141,
+    "title": "Killing wyverns",
+    "profit": 7722000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 142,
+    "title": "Catching whirligigs (speedy)",
+    "profit": 7690000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 143,
+    "title": "Tanning hides (Blue dragonhide)",
+    "profit": 7574000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 144,
+    "title": "Hunting crystal skillchompas",
+    "profit": 7525000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 145,
+    "title": "Making standard teleport tablets (Ardougne teleport)",
+    "profit": 7520000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 146,
+    "title": "Adding herbs to incense sticks (Torstol)",
+    "profit": 7519000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 147,
+    "title": "Cutting granite",
+    "profit": 7519000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 148,
+    "title": "Fletching headless dinarrows",
+    "profit": 7514000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 149,
+    "title": "Tanning royal dragonhide with Make Leather",
+    "profit": 7488000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 150,
+    "title": "Creating empty divine charges",
+    "profit": 7483000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 151,
+    "title": "Performing manifest ectoplasm rituals",
+    "profit": 7456000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 152,
+    "title": "Killing rune dragons",
+    "profit": 7438000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 153,
+    "title": "Exchanging agility arena tickets for pirate hook",
+    "profit": 7390000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 154,
+    "title": "Harvesting incandescent energy",
+    "profit": 7299000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 155,
+    "title": "Killing revenants",
+    "profit": 7283000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 156,
+    "title": "Making primal extracts (102 Herblore)",
+    "profit": 7210000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 157,
+    "title": "Adding herbs to incense sticks (Spirit weed)",
+    "profit": 7192000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 158,
+    "title": "Making standard teleport tablets (Watchtower teleport)",
+    "profit": 7187000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 159,
+    "title": "Making standard teleport tablets (Lumbridge teleport)",
+    "profit": 7165000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 160,
+    "title": "Screening volcanic ash",
+    "profit": 7127000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 161,
+    "title": "Killing Telos, the Warden (100 Enrage Claims)",
+    "profit": 7124000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 162,
+    "title": "Crafting clockwork",
+    "profit": 7097000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 163,
+    "title": "Making standard teleport tablets (Varrock teleport)",
+    "profit": 6985000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 164,
+    "title": "Killing Crystal Shapeshifters (Legacy mode) (Inquisitor staff)",
+    "profit": 6909000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 165,
+    "title": "Harvesting incandescent energy with Divine Conversion relic",
+    "profit": 6866000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 166,
+    "title": "Making standard teleport tablets (House teleport)",
+    "profit": 6829000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 167,
+    "title": "Casting Bones to Bananas",
+    "profit": 6770000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 168,
+    "title": "Enchanting ascendri bolts",
+    "profit": 6689000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 169,
+    "title": "Charging empty divine charges at incandescent wisps",
+    "profit": 6681000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 170,
+    "title": "Killing airut",
+    "profit": 6675000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 171,
+    "title": "Blessing extra fine sand",
+    "profit": 6636000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 172,
+    "title": "Smelting elder rune bars",
+    "profit": 6624000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 173,
+    "title": "Killing seekers",
+    "profit": 6521000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 174,
+    "title": "Killing Kree'arra",
+    "profit": 6388000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 175,
+    "title": "Killing frost dragons",
+    "profit": 6335000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 176,
+    "title": "Making botanist's amulets",
+    "profit": 6291000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 177,
+    "title": "Killing grifolapines",
+    "profit": 6279000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 178,
+    "title": "Killing abyssal demons (Magic)",
+    "profit": 6278000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 179,
+    "title": "Charging dinarrows (Jas)",
+    "profit": 6270000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 180,
+    "title": "Crafting battlestaves (Earth battlestaff)",
+    "profit": 6233000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 181,
+    "title": "Making Saradomin brew flasks",
+    "profit": 6223000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 182,
+    "title": "Making super attack potions",
+    "profit": 6211000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 183,
+    "title": "Crafting battlestaves (Fire battlestaff)",
+    "profit": 6170000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 184,
+    "title": "Smithing Masterwork armour",
+    "profit": 6150000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 185,
+    "title": "Killing the Giant Mimic (Beginner)",
+    "profit": 6140000,
+    "category": "Combat/Low",
+    "intensity": "Low"
+  },
+  {
+    "id": 186,
+    "title": "Killing the Giant Mimic (Hard)",
+    "profit": 6138000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 187,
+    "title": "Performing lesser necroplasm rituals (P2P)",
+    "profit": 6131000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 188,
+    "title": "Constructing frames at Fort Forinthry (Elder)",
+    "profit": 6102000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 189,
+    "title": "Screening fiery brimstone",
+    "profit": 6097000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 190,
+    "title": "Fletching elder headless arrows",
+    "profit": 6090000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 191,
+    "title": "Killing Crystal Shapeshifters (Legacy mode) (Non Inquisitor staff)",
+    "profit": 6059000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 192,
+    "title": "Finding Zamorak mjolnirs",
+    "profit": 6038000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 193,
+    "title": "Screening aerated sediment",
+    "profit": 5999000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 194,
+    "title": "TzekHaar trash farming (AFK)",
+    "profit": 5877000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 195,
+    "title": "Making ghostly ink (Powerful)",
+    "profit": 5825000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 196,
+    "title": "Making stone wall segments",
+    "profit": 5816000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 197,
+    "title": "Killing Rex Matriarchs (Rathis)",
+    "profit": 5717000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 198,
+    "title": "Crafting battlestaves (Water battlestaff)",
+    "profit": 5700000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 199,
+    "title": "Making infernal urns",
+    "profit": 5547000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 200,
+    "title": "Crafting dragonstone bracelets",
+    "profit": 5505000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 201,
+    "title": "Crafting dragonstone jewellery (Bracelets)",
+    "profit": 5505000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 202,
+    "title": "Killing K'ril Tsutsaroth (High-Level)",
+    "profit": 5447000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 203,
+    "title": "K'ril Tsutsaroth Alt Guide (High-level)",
+    "profit": 5447000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 204,
+    "title": "Harvesting vibrant energy",
+    "profit": 5374000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 205,
+    "title": "Adding herbs to incense sticks (Lantadyme)",
+    "profit": 5358000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 206,
+    "title": "Killing abyssal demons (Necromancy)",
+    "profit": 5345000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 207,
+    "title": "Excavating Xolo remains",
+    "profit": 5344000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 208,
+    "title": "Killing pyrefiends",
+    "profit": 5326000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 209,
+    "title": "Crafting ganodermic visors",
+    "profit": 5292000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 210,
+    "title": "Killing Iorwerth scouts",
+    "profit": 5288000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 211,
+    "title": "Killing the Giant Mimic (Medium)",
+    "profit": 5248000,
+    "category": "Combat/Mid",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 212,
+    "title": "Making ghostly ink (Greater)",
+    "profit": 5215000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 213,
+    "title": "Making ghostly ink (Regular)",
+    "profit": 5168000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 214,
+    "title": "Crafting dragonstone jewellery (Necklaces)",
+    "profit": 5136000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 215,
+    "title": "Making refined planks at Fort Forinthry (Magic)",
+    "profit": 5086000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 216,
+    "title": "Killing abyssal demons (Melee with Death Note Relic)",
+    "profit": 5053000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 217,
+    "title": "Making standard teleport tablets (Heart teleport)",
+    "profit": 5036000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 218,
+    "title": "Excavating Tsutsaroth remains",
+    "profit": 4963000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 219,
+    "title": "Catching whirligigs (swift)",
+    "profit": 4923000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 220,
+    "title": "Collecting Bik Elder Troves",
+    "profit": 4877000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 221,
+    "title": "Making prayer potions",
+    "profit": 4868000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 222,
+    "title": "Crafting battlestaves (Air battlestaff)",
+    "profit": 4828000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 223,
+    "title": "Killing acheron mammoths",
+    "profit": 4794000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 224,
+    "title": "Killing gladii",
+    "profit": 4756000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 225,
+    "title": "Smelting necronium bars",
+    "profit": 4697000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 226,
+    "title": "Making planks in Fort Forinthry (Elder)",
+    "profit": 4695000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 227,
+    "title": "Constructing frames at Fort Forinthry (Oak)",
+    "profit": 4657000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 228,
+    "title": "Constructing frames at Fort Forinthry (Magic)",
+    "profit": 4651000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 229,
+    "title": "Killing automaton guardians",
+    "profit": 4621000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 230,
+    "title": "Constructing frames at Fort Forinthry (Willow)",
+    "profit": 4561000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 231,
+    "title": "Fletching onyx bolts",
+    "profit": 4555000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 232,
+    "title": "Killing corrupted scarabs",
+    "profit": 4535000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 233,
+    "title": "Killing edimmu",
+    "profit": 4523000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 234,
+    "title": "TzekHaar-Jad farming",
+    "profit": 4455000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 235,
+    "title": "Collecting mort myre fungi",
+    "profit": 4393000,
+    "category": "Collecting",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 236,
+    "title": "Looting Shifting Tombs (Full completion)",
+    "profit": 4358000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 237,
+    "title": "Harvesting luminous energy",
+    "profit": 4356000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 238,
+    "title": "Smithing glorious bars",
+    "profit": 4324000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 239,
+    "title": "Making unfinished dwarf weed potions",
+    "profit": 4281000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 240,
+    "title": "Making infernal magic incense sticks",
+    "profit": 4230000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 241,
+    "title": "Excavating blood of Orcus",
+    "profit": 4222000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 242,
+    "title": "Performing greater necroplasm rituals",
+    "profit": 4208000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 243,
+    "title": "Making torstol incense sticks",
+    "profit": 4141000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 244,
+    "title": "Excavating Stormguard steel",
+    "profit": 4132000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 245,
+    "title": "Killing the Arch-Glacor (Normal Mode, AFK with less than 5 mechanics)",
+    "profit": 4094000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 246,
+    "title": "Constructing frames at Fort Forinthry (Yew)",
+    "profit": 4072000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 247,
+    "title": "Crafting air runes with a wicked hood",
+    "profit": 4005000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 248,
+    "title": "Making unfinished kwuarm potions",
+    "profit": 3997000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 249,
+    "title": "Killing adamant dragons",
+    "profit": 3984000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 250,
+    "title": "Constructing frames at Fort Forinthry (Acadia)",
+    "profit": 3893000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 251,
+    "title": "Killing muspah",
+    "profit": 3862000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 252,
+    "title": "Constructing frames at Fort Forinthry (Maple)",
+    "profit": 3840000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 253,
+    "title": "Smelting orikalkum bars",
+    "profit": 3781000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 254,
+    "title": "Creating equipment siphon",
+    "profit": 3773000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 255,
+    "title": "Killing salawa akhs",
+    "profit": 3769000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 256,
+    "title": "Cutting acadia logs",
+    "profit": 3728000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 257,
+    "title": "Killing liverworts",
+    "profit": 3688000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 258,
+    "title": "Killing corrupted scorpions (Off Slayer task)",
+    "profit": 3641000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 259,
+    "title": "Making ritual candles (Greater)",
+    "profit": 3635000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 260,
+    "title": "Constructing frames at Fort Forinthry (Teak)",
+    "profit": 3607000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 261,
+    "title": "Killing rorarii",
+    "profit": 3606000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 262,
+    "title": "Constructing frames at Fort Forinthry (Mahogany)",
+    "profit": 3593000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 263,
+    "title": "Crafting soul runes (with catalytic anima stones)",
+    "profit": 3592000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 264,
+    "title": "Taking eggs from larder",
+    "profit": 3578000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 265,
+    "title": "Killing K'ril Tsutsaroth (AFK Necromancy)",
+    "profit": 3573000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 266,
+    "title": "K'ril Tsutsaroth Alt Guide (Mid-level)",
+    "profit": 3573000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 267,
+    "title": "Crushing desert goat horns",
+    "profit": 3515000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 268,
+    "title": "Killing spiritual warriors",
+    "profit": 3484000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 269,
+    "title": "Killing aberrant spectres",
+    "profit": 3460000,
+    "category": "Combat/Mid",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 270,
+    "title": "Mining soft clay",
+    "profit": 3456000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 271,
+    "title": "Enchanting onyx bolts",
+    "profit": 3449000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 272,
+    "title": "Killing ganodermic beasts",
+    "profit": 3420000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 273,
+    "title": "Crafting nature runes with spirit graahk",
+    "profit": 3413000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 274,
+    "title": "Killing vyrelords and vyreladies",
+    "profit": 3403000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 275,
+    "title": "Collecting anti-dragon shields",
+    "profit": 3399000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 276,
+    "title": "Cleaning grimy toadflax",
+    "profit": 3380000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 277,
+    "title": "Killing luminous snagglers",
+    "profit": 3376000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 278,
+    "title": "Smithing cannonballs",
+    "profit": 3342000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 279,
+    "title": "Killing dark beasts",
+    "profit": 3305000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 280,
+    "title": "K'ril Tsutsaroth Alt Guide (Low-level)",
+    "profit": 3292000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 281,
+    "title": "Crafting dragonstone jewellery (Rings)",
+    "profit": 3289000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 282,
+    "title": "Making unfinished spirit weed potions",
+    "profit": 3256000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 283,
+    "title": "Crafting soul runes (without catalytic anima stones)",
+    "profit": 3183000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 284,
+    "title": "Charging dinarrows (Wen)",
+    "profit": 3183000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 285,
+    "title": "Constructing frames at Fort Forinthry (Wooden)",
+    "profit": 3182000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 286,
+    "title": "Collecting honeycomb",
+    "profit": 3181000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 287,
+    "title": "Picking glowing fungus",
+    "profit": 3175000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 288,
+    "title": "Mining concentrated coal rocks",
+    "profit": 3174000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 289,
+    "title": "Spinning flax (Spin Flax spell)",
+    "profit": 3157000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 290,
+    "title": "Making unfinished lantadyme potions",
+    "profit": 3128000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 291,
+    "title": "Charging dinarrows (Ful)",
+    "profit": 3106000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 292,
+    "title": "Crafting dragonstone jewellery (Unstrung amulets)",
+    "profit": 3098000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 293,
+    "title": "Killing tormented demons",
+    "profit": 3089000,
+    "category": "Combat/High",
+    "intensity": "Low"
+  },
+  {
+    "id": 294,
+    "title": "Cutting elder logs (with wood spirits)",
+    "profit": 3073000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 295,
+    "title": "Cleaning grimy kwuarm",
+    "profit": 3070000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 296,
+    "title": "Making unfinished toadflax potions",
+    "profit": 3007000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 297,
+    "title": "Killing warped tortoises",
+    "profit": 2993000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 298,
+    "title": "Mining primal ores",
+    "profit": 2992000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 299,
+    "title": "Opening muddy chests (No Beast of Burden)",
+    "profit": 2975000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 300,
+    "title": "Mining granite",
+    "profit": 2965000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 301,
+    "title": "Making unfinished fellstalk potions",
+    "profit": 2959000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 302,
+    "title": "Catching blue blubber jellyfish",
+    "profit": 2940000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 303,
+    "title": "Killing tortoises",
+    "profit": 2916000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 304,
+    "title": "Stringing oak shieldbows",
+    "profit": 2898000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 305,
+    "title": "Casting Superglass Make",
+    "profit": 2868000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 306,
+    "title": "Excavating cobalt blue material cache",
+    "profit": 2843000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 307,
+    "title": "Cleaning grimy snapdragon",
+    "profit": 2820000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 308,
+    "title": "Crafting emerald jewellery (Necklaces)",
+    "profit": 2801000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 309,
+    "title": "Making planks in Fort Forinthry (Magic)",
+    "profit": 2735000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 310,
+    "title": "Cutting elder logs (without wood spirits)",
+    "profit": 2707000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 311,
+    "title": "Opening muddy chests (F2P)",
+    "profit": 2682000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 312,
+    "title": "Cultivating hydrangea bushes at Het's Oasis",
+    "profit": 2632000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 313,
+    "title": "Making bomb vials",
+    "profit": 2600000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 314,
+    "title": "Collecting sandstone (5kg)",
+    "profit": 2597000,
+    "category": "Collecting",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 315,
+    "title": "Swarm fishing",
+    "profit": 2591000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 316,
+    "title": "Completing the Zarosian IV collection",
+    "profit": 2589000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 317,
+    "title": "Cleaning grimy irit",
+    "profit": 2525000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 318,
+    "title": "Completing the Zarosian II collection",
+    "profit": 2524000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 319,
+    "title": "Making unfinished snapdragon potions",
+    "profit": 2509000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 320,
+    "title": "Crafting ruby jewellery (Necklaces)",
+    "profit": 2508000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 321,
+    "title": "Crafting royal dragonhide bodies",
+    "profit": 2506000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 322,
+    "title": "Making unfinished irit potions",
+    "profit": 2500000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 323,
+    "title": "Killing chickens",
+    "profit": 2495000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 324,
+    "title": "Grinding sandstone into extra fine sand",
+    "profit": 2495000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 325,
+    "title": "Smithing elder rune + 5 items",
+    "profit": 2481000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 326,
+    "title": "Making planks in Fort Forinthry (Acadia)",
+    "profit": 2475000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 327,
+    "title": "Cleaning grimy avantoe",
+    "profit": 2465000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 328,
+    "title": "Casting High Level Alchemy on ascendri bolts (e)",
+    "profit": 2456000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 329,
+    "title": "Casting fruitfall",
+    "profit": 2445000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 330,
+    "title": "Making unfinished avantoe potions",
+    "profit": 2434000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 331,
+    "title": "Collecting tempered fungal shafts",
+    "profit": 2428000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 332,
+    "title": "Making yew incense sticks",
+    "profit": 2411000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 333,
+    "title": "Making planks in Fort Forinthry (Willow)",
+    "profit": 2408000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 334,
+    "title": "Completing the Zarosian III collection",
+    "profit": 2393000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 335,
+    "title": "Making planks in Fort Forinthry (Yew)",
+    "profit": 2390000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 336,
+    "title": "Killing Helwyr (Mid Level)",
+    "profit": 2390000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 337,
+    "title": "Killing abyssal demons (Melee)",
+    "profit": 2383000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 338,
+    "title": "Mining luminite",
+    "profit": 2383000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 339,
+    "title": "Cleaning grimy ranarr",
+    "profit": 2380000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 340,
+    "title": "Smelting adamant bars",
+    "profit": 2374000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 341,
+    "title": "Mining concentrated gold rocks",
+    "profit": 2299000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 342,
+    "title": "Mining animica (light animica)",
+    "profit": 2284000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 343,
+    "title": "Killing the Queen Black Dragon",
+    "profit": 2260000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 344,
+    "title": "Mining runite ore (Members low intensity)",
+    "profit": 2244000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 345,
+    "title": "Mining iron ore (Pay to play)",
+    "profit": 2196000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 346,
+    "title": "Smelting gold bars (Members)",
+    "profit": 2189000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 347,
+    "title": "Crafting emerald jewellery (Amulets of Defence)",
+    "profit": 2128000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 348,
+    "title": "Mining animica (dark animica)",
+    "profit": 2125000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 349,
+    "title": "Killing the Twin Furies (Mid Level)",
+    "profit": 2092000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 350,
+    "title": "Collecting grapes",
+    "profit": 2091000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 351,
+    "title": "Smelting rune bars (Free-to-play)",
+    "profit": 2091000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 352,
+    "title": "Smelting rune bars (Members)",
+    "profit": 2091000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 353,
+    "title": "Excavating Material cache (Cadmium red)",
+    "profit": 2089000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 354,
+    "title": "Making primal extracts (90 Herblore)",
+    "profit": 2072000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 355,
+    "title": "Killing Vindicta (Mid Level)",
+    "profit": 2071000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 356,
+    "title": "Mining banite",
+    "profit": 2060000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 357,
+    "title": "Killing spiritual mages",
+    "profit": 2056000,
+    "category": "Combat/Mid",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 358,
+    "title": "Mining runite ore (Members high intensity)",
+    "profit": 2037000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 359,
+    "title": "Crafting emerald jewellery (Rings)",
+    "profit": 2014000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 360,
+    "title": "Cleaning grimy lantadyme",
+    "profit": 1970000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 361,
+    "title": "Killing Gregorovic (Mid Level)",
+    "profit": 1969000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 362,
+    "title": "Smelting mithril bars",
+    "profit": 1968000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 363,
+    "title": "Making unfinished ranarr potions",
+    "profit": 1962000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 364,
+    "title": "Mining runite ore (Free to play)",
+    "profit": 1957000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 365,
+    "title": "Smelting bane bars",
+    "profit": 1953000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 366,
+    "title": "Crafting ganodermic leggings",
+    "profit": 1950000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 367,
+    "title": "Completing the Zamorakian III collection",
+    "profit": 1943000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 368,
+    "title": "Completing the Zamorakian IV collection",
+    "profit": 1940000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 369,
+    "title": "Stringing maple shortbows",
+    "profit": 1926000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 370,
+    "title": "Spinning wool",
+    "profit": 1925000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 371,
+    "title": "Smelting iron bars",
+    "profit": 1888000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 372,
+    "title": "Cleaning grimy torstol",
+    "profit": 1875000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 373,
+    "title": "Completing the Zamorakian II collection",
+    "profit": 1867000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 374,
+    "title": "Killing basilisks",
+    "profit": 1865000,
+    "category": "Combat/Low",
+    "intensity": "Low"
+  },
+  {
+    "id": 375,
+    "title": "Catching sailfish",
+    "profit": 1855000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 376,
+    "title": "Performing lesser necroplasm rituals (F2P)",
+    "profit": 1853000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 377,
+    "title": "Stringing willow shieldbows",
+    "profit": 1817000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 378,
+    "title": "Crafting cosmic runes",
+    "profit": 1809000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 379,
+    "title": "Stealing from vegetable stalls",
+    "profit": 1805000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 380,
+    "title": "Picking cabbages",
+    "profit": 1779000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 381,
+    "title": "Killing adolescent white wolves",
+    "profit": 1777000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 382,
+    "title": "Killing guards",
+    "profit": 1774000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 383,
+    "title": "Making ritual candles (Regular)",
+    "profit": 1754000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 384,
+    "title": "Harvesting radiant energy",
+    "profit": 1742000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 385,
+    "title": "Crafting diamond jewellery (Necklaces)",
+    "profit": 1738000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 386,
+    "title": "Hunting implings",
+    "profit": 1733000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 387,
+    "title": "Smelting steel bars",
+    "profit": 1704000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 388,
+    "title": "Killing rabbits",
+    "profit": 1678000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 389,
+    "title": "Stealing cave goblin wire",
+    "profit": 1676000,
+    "category": "Collecting",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 390,
+    "title": "Killing K'ril Tsutsaroth (Low-Level)",
+    "profit": 1665000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 391,
+    "title": "Cutting eternal magic logs",
+    "profit": 1639000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 392,
+    "title": "Killing skeletal wyverns",
+    "profit": 1637000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 393,
+    "title": "Harvesting elder energy",
+    "profit": 1622000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 394,
+    "title": "Smelting gold bars (Free-to-play)",
+    "profit": 1617000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 395,
+    "title": "Mining necrite ore",
+    "profit": 1612000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 396,
+    "title": "Creating divine charges (Incandescent energy)",
+    "profit": 1606000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 397,
+    "title": "Mining adamantite ore",
+    "profit": 1599000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 398,
+    "title": "Smelting bronze bars",
+    "profit": 1594000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 399,
+    "title": "Killing celestial dragons",
+    "profit": 1591000,
+    "category": "Combat/High",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 400,
+    "title": "Making magic incense sticks",
+    "profit": 1583000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 401,
+    "title": "Completing the Fight Kiln",
+    "profit": 1560000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 402,
+    "title": "Smithing adamant dart tips",
+    "profit": 1558000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 403,
+    "title": "Crafting emerald jewellery (Stringing amulets)",
+    "profit": 1547000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 404,
+    "title": "Mining animica during Trahaearn Voice of Seren",
+    "profit": 1526000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 405,
+    "title": "Excavating Venator remains",
+    "profit": 1509000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 406,
+    "title": "Killing spellwisps",
+    "profit": 1483000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 407,
+    "title": "Cutting oak logs",
+    "profit": 1472000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 408,
+    "title": "Opening closed chests",
+    "profit": 1466000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 409,
+    "title": "Folding glorious bars",
+    "profit": 1465000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 410,
+    "title": "Making planks in Fort Forinthry (Mahogany)",
+    "profit": 1400000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 411,
+    "title": "Completing the Zamorakian I collection",
+    "profit": 1399000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 412,
+    "title": "Mining iron ore (Free to play)",
+    "profit": 1384000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 413,
+    "title": "Smithing elder rune shields",
+    "profit": 1377000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 414,
+    "title": "Buying buckets of milk",
+    "profit": 1348000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 415,
+    "title": "Mining phasmatite ore",
+    "profit": 1347000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 416,
+    "title": "Crafting emerald jewellery (Unstrung amulets)",
+    "profit": 1341000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 417,
+    "title": "Mining clay",
+    "profit": 1337000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 418,
+    "title": "Fletching arrow shafts",
+    "profit": 1326000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 419,
+    "title": "Making guam potions",
+    "profit": 1294000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 420,
+    "title": "Killing General Graardor",
+    "profit": 1285000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 421,
+    "title": "Crafting emerald jewellery (Amulets)",
+    "profit": 1244000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 422,
+    "title": "Collecting blue dragon scales",
+    "profit": 1221000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 423,
+    "title": "Smelting silver bars",
+    "profit": 1219000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 424,
+    "title": "Hunting crimson skillchompas",
+    "profit": 1199000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 425,
+    "title": "Crafting carapace gloves",
+    "profit": 1168000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 426,
+    "title": "Pickpocketing paladins",
+    "profit": 1158000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 427,
+    "title": "Killing arhats",
+    "profit": 1158000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 428,
+    "title": "Pickpocketing crux eqal knights",
+    "profit": 1147000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 429,
+    "title": "Mining tin ore",
+    "profit": 1145000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 430,
+    "title": "Crafting carapace boots",
+    "profit": 1118000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 431,
+    "title": "Killing corpse spiders",
+    "profit": 1091000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 432,
+    "title": "Collecting white berries",
+    "profit": 1072000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 433,
+    "title": "Hunting viridian skillchompas",
+    "profit": 1064000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 434,
+    "title": "Creating XP capacitor 5000s",
+    "profit": 1049000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 435,
+    "title": "Killing cows",
+    "profit": 1045000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 436,
+    "title": "Superheating runite ore",
+    "profit": 1042000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 437,
+    "title": "Mining limestone and crafting into limestone bricks",
+    "profit": 1042000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 438,
+    "title": "Churning cheese wheels",
+    "profit": 1034000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 439,
+    "title": "Taking vials of water from a portable well",
+    "profit": 1030000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 440,
+    "title": "Creating mechanised chinchompas",
+    "profit": 1013000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 441,
+    "title": "Fletching headless arrows",
+    "profit": 1004000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 442,
+    "title": "Mining copper ore",
+    "profit": 999000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 443,
+    "title": "Generating compost with a compost mound familiar (Normal account)",
+    "profit": 993000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 444,
+    "title": "Hunting polar kebbits",
+    "profit": 993000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 445,
+    "title": "Killing nechryael",
+    "profit": 959000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 446,
+    "title": "Buying plant cures",
+    "profit": 954000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 447,
+    "title": "Killing warped bats",
+    "profit": 945000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 448,
+    "title": "Creating equipment siphons",
+    "profit": 913000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 449,
+    "title": "Stringing magic shortbows",
+    "profit": 904000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 450,
+    "title": "Mining mithril ore",
+    "profit": 899000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 451,
+    "title": "Collecting swamp toads",
+    "profit": 895000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 452,
+    "title": "Cutting willow logs",
+    "profit": 892000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 453,
+    "title": "Excavating Third Age iron",
+    "profit": 886000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 454,
+    "title": "Picking potatoes",
+    "profit": 884000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 455,
+    "title": "Spinning flax (Spinning wheel)",
+    "profit": 875000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 456,
+    "title": "Cutting willow and oak logs",
+    "profit": 866000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 457,
+    "title": "Hunting cobalt skillchompas",
+    "profit": 834000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 458,
+    "title": "Completing the Zarosian I collection",
+    "profit": 831000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 459,
+    "title": "Killing cave slime",
+    "profit": 815000,
+    "category": "Combat/Low",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 460,
+    "title": "Hunting green salamanders",
+    "profit": 795000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 461,
+    "title": "Harvesting pale energy",
+    "profit": 784000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 462,
+    "title": "Hunting azure skillchompas",
+    "profit": 781000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 463,
+    "title": "Smithing rune dart tips",
+    "profit": 776000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 464,
+    "title": "Crafting ruby jewellery (Rings from ores)",
+    "profit": 734000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 465,
+    "title": "Creating divine charges (Elder energy)",
+    "profit": 725000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 466,
+    "title": "Cutting logs",
+    "profit": 711000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 467,
+    "title": "Shearing sheep",
+    "profit": 678000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 468,
+    "title": "Killing steel dragons",
+    "profit": 673000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 469,
+    "title": "Collecting memory shards",
+    "profit": 664000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 470,
+    "title": "Pickpocketing elven workers",
+    "profit": 660000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 471,
+    "title": "Killing cave horrors",
+    "profit": 637000,
+    "category": "Combat/Mid",
+    "intensity": "Low"
+  },
+  {
+    "id": 472,
+    "title": "Smithing rune knives",
+    "profit": 605000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 473,
+    "title": "Humidifying vials",
+    "profit": 589000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 474,
+    "title": "Killing aviansie",
+    "profit": 575000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 475,
+    "title": "Killing mature grotworms",
+    "profit": 563000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 476,
+    "title": "Killing fungal magi",
+    "profit": 557000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 477,
+    "title": "Collecting harmonic dust",
+    "profit": 551000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 478,
+    "title": "Collecting jangerberries",
+    "profit": 547000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 479,
+    "title": "Killing mithril dragons",
+    "profit": 529000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 480,
+    "title": "Smithing adamant arrowheads (From ores)",
+    "profit": 528000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 481,
+    "title": "Buying bear fur",
+    "profit": 525000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 482,
+    "title": "Killing gelatinous abominations",
+    "profit": 513000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 483,
+    "title": "Killing glacytes",
+    "profit": 510000,
+    "category": "Combat",
+    "intensity": "Low"
+  },
+  {
+    "id": 484,
+    "title": "Smithing adamant arrowheads (From bars)",
+    "profit": 481000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 485,
+    "title": "Killing red dragons",
+    "profit": 472000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 486,
+    "title": "Killing green dragons",
+    "profit": 462000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 487,
+    "title": "Killing black dragons",
+    "profit": 452000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 488,
+    "title": "Collecting swamp tar from the Lady Zay",
+    "profit": 442000,
+    "category": "Collecting",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 489,
+    "title": "Smithing rune bolts (unf)",
+    "profit": 434000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 490,
+    "title": "Making ultracompost",
+    "profit": 430000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 491,
+    "title": "Smithing steel nails",
+    "profit": 415000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 492,
+    "title": "Crafting sapphire jewellery (Necklaces)",
+    "profit": 407000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 493,
+    "title": "Smithing rune arrowheads",
+    "profit": 405000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 494,
+    "title": "Stringing maple shieldbows",
+    "profit": 400000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 495,
+    "title": "Killing exiled kalphite paragons",
+    "profit": 398000,
+    "category": "Combat/Mid",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 496,
+    "title": "Crafting air runes (free-to-play)",
+    "profit": 397000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 497,
+    "title": "Stringing magic shieldbows",
+    "profit": 392000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 498,
+    "title": "Enchanting bakriminel bolts (Ruby)",
+    "profit": 386000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 499,
+    "title": "Hunting black salamanders",
+    "profit": 376000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 500,
+    "title": "Making planks in Fort Forinthry (Maple)",
+    "profit": 368000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 501,
+    "title": "Picking up eggs at Fred's Farm",
+    "profit": 355000,
+    "category": "Collecting",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 502,
+    "title": "Hunting grenwalls",
+    "profit": 352000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 503,
+    "title": "Crafting ruby jewellery (Rings)",
+    "profit": 316000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 504,
+    "title": "Killing blue dragons",
+    "profit": 264000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 505,
+    "title": "Cutting mahogany logs",
+    "profit": 259000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 506,
+    "title": "Picking cadava berries",
+    "profit": 252000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 507,
+    "title": "Catching whirligigs (hasty)",
+    "profit": 202000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 508,
+    "title": "Hunting ruby harvests",
+    "profit": 201000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 509,
+    "title": "Killing black unicorns",
+    "profit": 200000,
+    "category": "Combat/Low",
+    "intensity": "High"
+  },
+  {
+    "id": 510,
+    "title": "Crafting diamond jewellery (Rings)",
+    "profit": 182000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 511,
+    "title": "Collecting limpwurt roots",
+    "profit": 170000,
+    "category": "Collecting",
+    "intensity": "High"
+  },
+  {
+    "id": 512,
+    "title": "Killing unicows",
+    "profit": 161000,
+    "category": "Combat/Mid",
+    "intensity": "High"
+  },
+  {
+    "id": 513,
+    "title": "Casting siphon self",
+    "profit": 136000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 514,
+    "title": "Catching whirligigs (plain)",
+    "profit": 69000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 515,
+    "title": "Adding herbs to incense sticks (Kwuarm)",
+    "profit": 54000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 516,
+    "title": "Generating compost with a compost mound familiar (Ironman)",
+    "profit": 3000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 517,
+    "title": "Charging inert adrenaline crystals",
+    "profit": 28386000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 518,
+    "title": "Special Wilderness Flash Events",
+    "profit": 13938000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 519,
+    "title": "Operating the Alchemiser mk. II",
+    "profit": 9861000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 520,
+    "title": "Mega shop run",
+    "profit": 9029000,
+    "category": "Collecting",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 521,
+    "title": "Operating partial potion producer DX",
+    "profit": 6825000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 522,
+    "title": "Making ultracompost (infernus pyroclasts)",
+    "profit": 6147000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 523,
+    "title": "Using the auto disassembler mk. II to make empty divine charge",
+    "profit": 6092000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 524,
+    "title": "Operating optimised hide tanner (Red dragonhide)",
+    "profit": 5528000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 525,
+    "title": "Cleaning grimy harralander",
+    "profit": 5170000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 526,
+    "title": "Operating optimised hide tanner (Snake hide (swamp))",
+    "profit": 4958000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 527,
+    "title": "Operating optimised hide tanner (Royal dragonhide)",
+    "profit": 4928000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 528,
+    "title": "Operating optimised hide tanner (Black dragonhide)",
+    "profit": 4148000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 529,
+    "title": "Completing Soul Reaper tasks",
+    "profit": 3817000,
+    "category": "Combat/Mid",
+    "intensity": ""
+  },
+  {
+    "id": 530,
+    "title": "Killing Beastmaster Durzag",
+    "profit": 3641000,
+    "category": "Combat/High",
+    "intensity": "High"
+  },
+  {
+    "id": 531,
+    "title": "Gathering golden roses with Rapid Growth",
+    "profit": 3270000,
+    "category": "Gathering",
+    "intensity": "Low"
+  },
+  {
+    "id": 532,
+    "title": "Cleaning grimy dwarf weed",
+    "profit": 3010000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 533,
+    "title": "Buying feathers",
+    "profit": 2981000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 534,
+    "title": "High level player-owned farm run",
+    "profit": 2936000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 535,
+    "title": "Operating optimised hide tanner (Green dragonhide)",
+    "profit": 2348000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 536,
+    "title": "Buying limestone & limestone bricks (Full run)",
+    "profit": 2220000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 537,
+    "title": "Farming kwuarm (with Plant Power T4)",
+    "profit": 2181000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 538,
+    "title": "Farming spirit weed (With Plant Power T4)",
+    "profit": 2024000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 539,
+    "title": "Farming lantadyme (with Plant Power T4)",
+    "profit": 2011000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 540,
+    "title": "Buying supplies from the Stonemason",
+    "profit": 1999000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 541,
+    "title": "Farming dwarf weed (with Plant Power T4)",
+    "profit": 1952000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 542,
+    "title": "Buying runes",
+    "profit": 1908000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 543,
+    "title": "Buying supplies from Razmire",
+    "profit": 1720000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 544,
+    "title": "Operating optimised hide tanner (Blue dragonhide)",
+    "profit": 1538000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 545,
+    "title": "Making vis wax",
+    "profit": 1528000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 546,
+    "title": "Raising rex dinosaurs",
+    "profit": 1521000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 547,
+    "title": "Farming toadflax (with Plant Power T4)",
+    "profit": 1499000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 548,
+    "title": "Operating optimised hide tanner (Undead dragonhide)",
+    "profit": 1448000,
+    "category": "Processing",
+    "intensity": "Low"
+  },
+  {
+    "id": 549,
+    "title": "Operating high capacity plank maker (Elder planks)",
+    "profit": 1405000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 550,
+    "title": "Farming torstol (with Plant Power T4)",
+    "profit": 1330000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 551,
+    "title": "Farming fellstalk (with Plant Power T4)",
+    "profit": 1157000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 552,
+    "title": "Mining red and crystal sandstone",
+    "profit": 1153000,
+    "category": "Gathering",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 553,
+    "title": "Raising black dragons to adolescent",
+    "profit": 1135000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 554,
+    "title": "Making potion flasks",
+    "profit": 1133000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 555,
+    "title": "Buying construction materials from Bandit Duty Free",
+    "profit": 1055000,
+    "category": "Collecting",
+    "intensity": "M"
+  },
+  {
+    "id": 556,
+    "title": "Buying vials of water",
+    "profit": 1001000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 557,
+    "title": "Farming godly grapevines",
+    "profit": 931000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 558,
+    "title": "Farming wergali (with Plant Power T4)",
+    "profit": 872000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 559,
+    "title": "Buying crossbows from shops",
+    "profit": 861000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 560,
+    "title": "Creating spirit mementos",
+    "profit": 822000,
+    "category": "Processing",
+    "intensity": "High"
+  },
+  {
+    "id": 561,
+    "title": "Farming arbuck (without any Plant Power unlocked)",
+    "profit": 781000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 562,
+    "title": "Mucking dragon manure",
+    "profit": 764000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 563,
+    "title": "Farming spirit weed (Without Plant Power T4)",
+    "profit": 754000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 564,
+    "title": "Farming kwuarm (without Plant Power T4)",
+    "profit": 701000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 565,
+    "title": "Buying meat from Chargurr",
+    "profit": 701000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 566,
+    "title": "Operating high capacity plank maker (Magic planks)",
+    "profit": 652000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 567,
+    "title": "Farming dwarf weed (without Plant Power T4)",
+    "profit": 642000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 568,
+    "title": "Farming lantadyme (without Plant Power T4)",
+    "profit": 639000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 569,
+    "title": "Picking primal fruit",
+    "profit": 589000,
+    "category": "Gathering",
+    "intensity": "High"
+  },
+  {
+    "id": 570,
+    "title": "Farming ranarr (with Plant Power T4)",
+    "profit": 583000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 571,
+    "title": "Buying items from Martin Thwait",
+    "profit": 581000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 572,
+    "title": "Transmuting onyx dust",
+    "profit": 569000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 573,
+    "title": "Buying items from axe shops",
+    "profit": 568000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 574,
+    "title": "Operating high capacity plank maker (Acadia planks)",
+    "profit": 553000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 575,
+    "title": "Farming morchella mushrooms",
+    "profit": 550000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 576,
+    "title": "Buying scimitars from Daga",
+    "profit": 542000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 577,
+    "title": "Operating high capacity plank maker (Willow planks)",
+    "profit": 527000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 578,
+    "title": "Operating high capacity plank maker (Yew planks)",
+    "profit": 520000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 579,
+    "title": "Buying bomb vials",
+    "profit": 516000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 580,
+    "title": "Farming cadantine (with Plant Power T4)",
+    "profit": 501000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 581,
+    "title": "Farming fellstalk (without Plant Power T4)",
+    "profit": 470000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 582,
+    "title": "Farming toadflax (without Plant Power T4)",
+    "profit": 468000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 583,
+    "title": "Buying mithril seeds",
+    "profit": 453000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 584,
+    "title": "Picking curry leaves",
+    "profit": 439000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 585,
+    "title": "Picking coconuts",
+    "profit": 425000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 586,
+    "title": "Buying feathers of Ma'at",
+    "profit": 424000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 587,
+    "title": "Farming torstol (without Plant Power T4)",
+    "profit": 419000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 588,
+    "title": "Buying from the Culinaromancer's Chest",
+    "profit": 397000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 589,
+    "title": "Farming snapdragon (With Plant Power T4)",
+    "profit": 365000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 590,
+    "title": "Buying limestone & limestone bricks (Fort Forinthry)",
+    "profit": 320000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 591,
+    "title": "Buying items from farm shops",
+    "profit": 319000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 592,
+    "title": "Crafting astral runes with a wicked hood",
+    "profit": 310000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 593,
+    "title": "Farming irit (with Plant Power T4)",
+    "profit": 289000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 594,
+    "title": "Picking papayas",
+    "profit": 283000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 595,
+    "title": "Claiming all daily area task rewards",
+    "profit": 269000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 596,
+    "title": "Crafting nature runes with a wicked hood",
+    "profit": 268000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 597,
+    "title": "Farming wergali (without Plant Power T4)",
+    "profit": 266000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 598,
+    "title": "Farming avantoe (with Plant Power T4)",
+    "profit": 266000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 599,
+    "title": "Crafting cosmic runes with a wicked hood",
+    "profit": 248000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 600,
+    "title": "Buying shields from Cassie",
+    "profit": 244000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 601,
+    "title": "Buying balls of wool",
+    "profit": 206000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 602,
+    "title": "Farming ranarr (without Plant Power T4)",
+    "profit": 190000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 603,
+    "title": "Buying yak-hide",
+    "profit": 176000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 604,
+    "title": "Buying maces from Flynn",
+    "profit": 147000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 605,
+    "title": "Operating high capacity plank maker (Mahogany planks)",
+    "profit": 140000,
+    "category": "Processing",
+    "intensity": ""
+  },
+  {
+    "id": 606,
+    "title": "Buying items from pet shop",
+    "profit": 138000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 607,
+    "title": "Farming cadantine (without Plant Power T4)",
+    "profit": 132000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 608,
+    "title": "Farming snapdragon (Without Plant Power T4)",
+    "profit": 132000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 609,
+    "title": "Buying pickaxes from Nurmof",
+    "profit": 102000,
+    "category": "Collecting",
+    "intensity": "Low"
+  },
+  {
+    "id": 610,
+    "title": "Farming avantoe (without Plant Power T4)",
+    "profit": 88000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 611,
+    "title": "Farming irit (without Plant Power T4)",
+    "profit": 87000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 612,
+    "title": "Crafting death runes with Tirannwn quiver 3",
+    "profit": 72000,
+    "category": "Processing",
+    "intensity": "Moderate"
+  },
+  {
+    "id": 613,
+    "title": "Farming bloodweed",
+    "profit": 52000,
+    "category": "Gathering",
+    "intensity": ""
+  },
+  {
+    "id": 614,
+    "title": "Claiming potato cacti from the Weird Old Man",
+    "profit": 21000,
+    "category": "Collecting",
+    "intensity": ""
+  },
+  {
+    "id": 615,
+    "title": "Farming marigolds",
+    "profit": 19000,
+    "category": "Gathering",
+    "intensity": ""
+  }
+]

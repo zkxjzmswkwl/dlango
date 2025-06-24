@@ -6,9 +6,16 @@ import std.stdio;
 import std.logger;
 import std.parallelism;
 import std.conv : to;
+import std.algorithm.searching : canFind;
+import std.string;
 import common.types;
 import http.request;
 import http.response;
+
+private struct ParsedInfo {
+    HttpRequest request;
+    string methodString;
+}
 
 class HttpServer {
     private TcpSocket socket;
@@ -19,56 +26,113 @@ class HttpServer {
         this.socket = new TcpSocket();
         this.socket.bind(new InternetAddress("127.0.0.1", 8081));
         this.socket.listen(10);
-        info("Server is running on http://127.0.0.1:8081");
+        info("Server is running on http://127.0.0.1:8081 (in synchronous debug mode)");
+        
         while (true) {
-            // yay new friend
-            Socket client = this.socket.accept();
-            taskPool.put(task(() {
+            try {
+                Socket client = this.socket.accept();
+                info("con from ", client.remoteAddress().toString());
+
                 this.handleClient(client);
-            }));
+
+            } catch (SocketException e) {
+                error("failed: ", e.msg);
+            }
         }
     }
 
-    private HttpRequest parseRequest(string request) {
+    private ParsedInfo parseRequest(string request) {
         auto lines = request.split("\r\n");
-        auto method = lines[0].split(" ")[0];
-        auto path = lines[0].split(" ")[1];
-        auto httpVersion = lines[0].split(" ")[2];
-        Headers headers;
-        foreach (line; lines[1..$]) {
-            auto header = line.split(": ");
-            // (carter):
-            // it could be that manually checking first two bytes for `\r\n` is faster.
-            if (line.empty()) break;
-            headers[header[0]] = header[1];
+        if (lines.length < 1 || lines[0].split(" ").length < 3) {
+            return ParsedInfo(null, null);
         }
-        /// ew!
-        auto body = cast(ubyte[])lines[1..$].join("\r\n");
 
-        /// (carter):
-        /// This is silly. Definitely an oopsie-woopsie with the current enum.
-        /// Seems like a get-in-bed-and-watch-dune-and-fix-this-tomorrow-angle.
-        switch (method) {
-            case "GET":  return new HttpRequest(HttpRequest.Method.GET, path, httpVersion, headers);
-            case "POST": return new HttpRequest(HttpRequest.Method.POST, path, httpVersion, headers);
-            case "PUT":  return new HttpRequest(HttpRequest.Method.PUT, path, httpVersion, headers);
-            default:     return null;
+        auto requestLineParts = lines[0].split(" ");
+        auto methodStr = requestLineParts[0];
+        auto path = requestLineParts[1];
+        auto httpVersion = requestLineParts[2];
+        
+        Headers headers;
+        for (size_t i = 1; i < lines.length; i++) {
+            auto line = lines[i];
+            if (line.empty) break;
+            
+            auto colonPos = indexOf(line, ":");
+            if (colonPos > 0) {
+                auto key = line[0 .. colonPos].strip();
+                auto value = line[colonPos + 1 .. $].strip();
+                headers[key] = value;
+            }
         }
-        /// Only 3 requests will be supported. We won't need DELETE, since we just won't make mistakes.
-        /// [__v(-_-)v__]
-        return null;
+        
+        ubyte[] body;
+
+        HttpRequest.Method method;
+        switch (methodStr) {
+            case "GET":  method = HttpRequest.Method.GET; break;
+            case "POST": method = HttpRequest.Method.POST; break;
+            case "PUT":  method = HttpRequest.Method.PUT; break;
+            default: return ParsedInfo(null, null);
+        }
+        
+        auto httpRequest = new HttpRequest(method, path, httpVersion, headers);
+        return ParsedInfo(httpRequest, methodStr);
     }
 
     private void handleClient(Socket client) {
-        char[] buffer = new char[1024];
-        auto r = client.receive(buffer);
-        if (r == 0 || r == Socket.ERROR) {
-            error("Socket error %d", r);
+        try {
+            auto requestData = appender!string;
+            char[] tempBuffer = new char[4096];
+            
+            while (true) {
+                auto bytesReceived = client.receive(tempBuffer);
+                if (bytesReceived == 0 || bytesReceived == Socket.ERROR) {
+                    if (bytesReceived == 0) info("disconnected.");
+                    else error("recv error.");
+                    client.close();
+                    return;
+                }
+                
+                requestData.put(tempBuffer[0..bytesReceived]);
+                
+                if (requestData.data.canFind("\r\n\r\n")) {
+                    break;
+                }
+            }
+            
+            auto requestString = requestData.data;
+            if (requestString.length == 0) {
+                client.close();
+                return;
+            }
+
+            auto parsedInfo = parseRequest(requestString);
+            auto request = parsedInfo.request;
+
+            if (request is null) {
+                auto badRequestResponse = new HttpResponse(BAD_REQUEST, null, "<h1>400 Bad Request</h1>");
+                client.send(badRequestResponse.serialize());
+                client.close();
+                return;
+            }
+
+            if (request.path in routes) {
+                 auto response = this.routes[request.path](request);
+                 client.send(response.serialize());
+            } else {
+                Headers headers;
+                headers["Content-Type"] = "text/html; charset=utf-8";
+                auto notFoundResponse = new HttpResponse(NOT_FOUND, headers, "<h1>404 Not Found</h1>");
+                client.send(notFoundResponse.serialize());
+            }
+
+        } catch (Exception e) {
+            error("error: ", e.msg);
+        } finally {
+            if (client.isAlive) {
+                info("closing.");
+                client.close();
+            }
         }
-        auto request = parseRequest(buffer[0..r].to!string);
-        info("Parsed request: ", request);
-        auto response = this.routes[request.path](request);
-        client.send(response.serialize());
-        client.close();
     }
 }

@@ -1,5 +1,7 @@
 import std.stdio;
 import std.file;
+import rs3;
+import std.array;
 import http.server;
 import http.request;
 import http.response;
@@ -22,8 +24,8 @@ void testORM() {
 void run() {
 	RequestHandler[string] routes;
 	routes["/"] = (request) {
-        auto filtered = User.objects.filter([Q("email__iexact", "RETRAC@gmail.com")]).take(10);
-		return new HttpResponse(HttpStatus(200, "OK"), new Headers(), Index("Dlango test", filtered));
+        auto filtered = MoneyMethod.objects.all();
+		return new HttpResponse(HttpStatus(200), new Headers(), Index("Dlango test", filtered.array));
 	};
 	routes["/hello"] = (request) {
 		return new HttpResponse(HttpStatus(200, "OK"), new Headers(), "HELLO BROTHERMAN!");

@@ -7,6 +7,7 @@ import std.conv;
 import std.file;
 import std.stdio;
 import std.algorithm;
+import std.path;
 import orm.db;
 import orm.migration;
 import orm.queryset;
@@ -72,7 +73,7 @@ void migrate() {
     foreach (entry; dirEntries("source/migrations", SpanMode.shallow)) {
         if (entry.name.endsWith(".d")) {
             auto migrationName = entry.name.replace("\\", "/");
-            migrationName = entry.name.split("/")[$-1][0..$-2];
+            migrationName = stripExtension(entry.name.split("/")[$-1]);
             writeln(migrationName);
             pendingMigrations ~= migrationName;
         }
@@ -84,6 +85,7 @@ void migrate() {
         if (name in prevMigrations) continue;
 
         writeln("Applying migration: ", name);
+        name = name.replace("\\", "/").split("/")[$-1];
         runMigrationByName(name, db);
         db.execute(`
             INSERT INTO dlango_migrations (name, applied_at) VALUES ('` ~ name ~ `', datetime('now'));

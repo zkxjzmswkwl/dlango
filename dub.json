@@ -11,11 +11,12 @@
 		}
 	},
 	"description": "A minimal D application.",
+	"dflags": [
+		"-J."
+	],
 	"libs": [
 		"sqlite3"
 	],
 	"license": "fuckit",
-	"name": "dlango",
-	"dflags": ["-J."]
-
+	"name": "dlango"
 }

@@ -1,4 +1,4 @@
-dempl Index(string title, orm.models.User[] alotofusers) {
+dempl Index(string title, orm.models.MoneyMethod[] methods) {
     <html>
         <head>
              <title>{ title }</title>
@@ -7,8 +7,13 @@ dempl Index(string title, orm.models.User[] alotofusers) {
         <body>
             @Navbar()
             <div class="container p-4 border-2 border-gray-300 w-1/2 mx-auto">
-                foreach (user; alotofusers) {
-                    <h1>{ user.ID } : { user.username }</h1>
+                foreach (method; methods) {
+                    <div class="border-2 border-gray-300 p-4">
+                        <h1>{ method.title }</h1>
+                        <p>{ method.category }</p>
+                        <p>{ method.intensity }</p>
+                        <p>{ method.profit }</p>
+                    </div>
                 }
             </div>
         </body>

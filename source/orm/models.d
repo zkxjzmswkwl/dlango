@@ -86,13 +86,29 @@ template Model(T) {
     }
 }
 
+struct MoneyMethod {
+    mixin Model!MoneyMethod;
+
+    string title;
+    string category;
+    string intensity;
+    long profit;
+
+    this(string title, string category, string intensity, long profit) {
+        this.title = title;
+        this.category = category;
+        this.intensity = intensity;
+        this.profit = profit;
+    }
+}
+
 struct User {
 	mixin Model!User;
 
 	string username;
 	string email;
     string password;
-    long createdAt;
+    int createdAt;
 
     this(string username, string email, string password) {
         this.username = username;
@@ -130,4 +146,4 @@ struct Game {
     string category;
 }
 
-alias AllModels = AliasSeq!(User, Song, Product, Game);
+alias AllModels = AliasSeq!(User, MoneyMethod);
