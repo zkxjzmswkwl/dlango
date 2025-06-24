@@ -1,0 +1,30 @@
+module templates.navbar;
+
+import std.array : appender;
+import std.conv : to;
+
+string Navbar() {
+    auto result = appender!string;
+
+    result.put(`<nav class="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold text-gray-900 dark:text-white">Dlango</h1>
+                    </div>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex items-baseline space-x-4">
+                            <a href="/" class="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                            <a href="/hello" class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Hello</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                </div>
+            </div>
+        </div>
+    </nav>`);
+
+    return result.data;
+}

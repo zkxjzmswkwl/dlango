@@ -8,16 +8,13 @@ import orm.models;
 import tool.makemigration;
 import tool.migrate;
 import orm.q : Q;
-
-string getIndexHTML() {
-	return readText("test/index.html");
-}
+import templates.index;
 
 void testORM() {
 	// (carter): no batching of queries, so this takes ages!
 	// (carter): this will still take ages when there *are* batched queries,
 	// (carter): they'll just be an alternative to this.
-	for (int i = 0; i < 10_000; i++) {
+	for (int i = 0; i < 100; i++) {
 		User("retrac", "retrac@gmail.com", "password").save();
 	}
 }
@@ -25,7 +22,8 @@ void testORM() {
 void run() {
 	RequestHandler[string] routes;
 	routes["/"] = (request) {
-		return new HttpResponse(HttpStatus(200, "OK"), new Headers(), getIndexHTML());
+        auto filtered = User.objects.filter([Q("email__iexact", "RETRAC@gmail.com")]).take(10);
+		return new HttpResponse(HttpStatus(200, "OK"), new Headers(), Index("Dlango test", filtered));
 	};
 	routes["/hello"] = (request) {
 		return new HttpResponse(HttpStatus(200, "OK"), new Headers(), "HELLO BROTHERMAN!");

@@ -1,0 +1,22 @@
+{
+    "scopeName": "source.dempl",
+    "name": "Dempl",
+    "patterns": [
+      { "include": "text.html.basic" },
+      {
+        "name": "source.embedded.d",
+        "begin": "@\\{",
+        "beginCaptures": {
+          "0": { "name": "punctuation.section.embedded.begin.dempl" }
+        },
+        "end": "\\}",
+        "endCaptures": {
+          "0": { "name": "punctuation.section.embedded.end.dempl" }
+        },
+        "patterns": [
+          { "include": "source.d" }
+        ]
+      }
+    ],
+    "uuid": "dempl-basic"
+  }

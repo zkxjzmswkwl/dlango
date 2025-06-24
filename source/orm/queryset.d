@@ -98,6 +98,18 @@ struct QuerySet(T) {
         return newQs;
     }
 
+    T first() {
+        auto results = this.exec();
+        enforce(results.length > 0, new DoesNotExist(T.stringof ~ " matching query does not exist."));
+        return results[0];
+    }
+
+    T[] take(int n) {
+        auto results = this.exec();
+        return results[0..n];
+    }
+
+
     /// Example usage:
     /// User user = User.objects.get("username = ?", "carter");
     /// User user = User.objects.get("username = ? AND password = ?", "carter", "password");
