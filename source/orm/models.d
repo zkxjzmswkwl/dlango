@@ -108,7 +108,7 @@ struct User {
 	string username;
 	string email;
     string password;
-    int createdAt;
+    long createdAt;
 
     this(string username, string email, string password) {
         this.username = username;
