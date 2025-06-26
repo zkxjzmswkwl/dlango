@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dlangoadmin
+dlangoadmin.so
+dlangoadmin.dylib
+dlangoadmin.dll
+dlangoadmin.a
+dlangoadmin.lib
+dlangoadmin-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

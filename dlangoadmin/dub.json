@@ -1,0 +1,17 @@
+{
+	"name": "dlango-admin",
+	"description": "Command-line interface for the Dlango framework.",
+	"authors": [
+		"Carter"
+	],
+	"copyright": "fuckit",
+	"license": "fuckit",
+	"targetType": "executable",
+	"mainSourceFile": "source/app.d",
+	"dependencies": {
+		"dlango": {
+			"path": "/Users/cartersmith/personal/dlango"
+		},
+		"d2sqlite3": "~>0.11.0"
+	}
+}

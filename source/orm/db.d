@@ -12,7 +12,7 @@ class GDatabase {
     private static Database _db;
     private static GDatabase _instance;
     private this(){
-        _db = Database("test.db");
+        _db = Database("db.sqlite3");
     }
     static GDatabase getInstance() {
         if (_instance is null) {
