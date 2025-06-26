@@ -8,6 +8,12 @@ Personally I won't be using AI assistance for code generation or linting, with p
 
 I want to refrain from using AI assistance for code generation and linting because I enjoy programming. I enjoy not knowing and I enjoy figuring it out on my own. I acknowledge that this will make the project take longer. I'm fine with that.
 
+# Quickstart
+- build `dlangoadmin` project.
+- place `dlango-admin`/`.exe` in your path.
+- create new project: `dlango-admin createproject --name=projectname`
+- As of writing, the generated project does not start a webserver or provide a convenient way for you to add routes (June 25).
+  - I will fix this tomorrow night.
 
 # Usage
 Dlango uses code-generated database schemas.
