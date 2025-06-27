@@ -24,4 +24,4 @@ jobs:
 
     - name: 'Build'
       run: |
-        dub build --compiler=ldc2
+        dub build --compiler=dmd
