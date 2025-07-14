@@ -5,6 +5,7 @@ import std.file;
 import std.path;
 import std.format;
 
+/// (carter): TODO: Add dlango to dub so we can just use it directly rather than a local path.
 enum DUB_JSON_TEMPLATE = q{
 {
 	"name": "%s",

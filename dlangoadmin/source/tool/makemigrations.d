@@ -26,13 +26,11 @@ import std.conv;
 import std.variant;
 import std.path;
 
-// Framework imports
 import orm.schema;
 import orm.models;
 import orm.intro;
 import asdf; // General asdf import
 
-// User project imports
 import models; // Assumes user models are in a 'models' package
 import settings.db; // To ensure settings are valid
 
@@ -50,15 +48,12 @@ struct AddColumn {
 }
 
 void main(string[] args) {
-    // These paths are relative to the user's project root, where this program is executed.
     string snapshotPath = ".orm_snapshot.json";
     auto projectRoot = ".";
 
     ProjectSchema currentState;
     ModelSchema modelSchema;
 
-    // 1. Build the current schema state from the user's models
-    //    Explicitly use `models.AllModels` to avoid symbol conflicts.
     static foreach (T; models.AllModels) {
         modelSchema = ModelSchema.init;
         foreach (field; ModelInfo!T.fields) {
@@ -67,7 +62,6 @@ void main(string[] args) {
         currentState.models[ModelInfo!T.tableName] = modelSchema;
     }
 
-    // 2. Load the previous schema state from the snapshot file
     ProjectSchema snapshotState;
     if (exists(snapshotPath)) {
         try {
@@ -79,7 +73,6 @@ void main(string[] args) {
         writeln("No snapshot found, this will be the initial migration.");
     }
 
-    // 3. Diff the current state against the snapshot
     SchemaChange[] changes;
     foreach (tableName, currentModel; currentState.models) {
         auto snapshotModel = tableName in snapshotState.models;
@@ -94,14 +87,12 @@ void main(string[] args) {
             // TODO: Add detection for changed and removed fields
         }
     }
-    // TODO: Add detection for removed tables
 
     if (changes.length == 0) {
         writeln("No changes detected.");
         return;
     }
 
-    // 4. Generate the new migration file
     auto migrationDir = buildPath(projectRoot, "source", "migrations");
     mkdirRecurse(migrationDir);
 
@@ -118,7 +109,6 @@ void main(string[] args) {
         }
     }
 
-    // Prefix the migration number with 'm' to create a valid D identifier
     string newNum = format("m%04d", lastMigrationNum + 1);
     string desc = (args.length > 1 && args[1].length > 0) ? args[1].replace("_", "").replace(" ", "") : "auto";
     string migrationModuleName = newNum ~ "_" ~ desc;
@@ -159,14 +149,12 @@ void main(string[] args) {
     std.file.write(migrationPath, code.data);
     writeln("Generated migration: ", migrationPath);
 
-    // 5. Update the manifest file
     auto manifestPath = buildPath(migrationDir, "manifest");
     auto manifestFile = File(manifestPath, "a"); // Append mode creates if not exists
     manifestFile.writeln(migrationModuleName);
     manifestFile.close();
     writeln("Updated manifest file.");
 
-    // 6. Update the snapshot to the current state
     std.file.write(snapshotPath, currentState.toJSON().to!string);
     writeln("Updated schema snapshot.");
 }
