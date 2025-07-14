@@ -1,5 +1,6 @@
 module orm.queryset;
 
+import std.stdio;
 import std.array;
 import std.algorithm;
 import std.conv;
@@ -28,7 +29,7 @@ struct QuerySet(T) {
     private DbValue[] _whereParams;
     private string[] _whereClauses;
 
-    QuerySet!T filter(Q[] criteria) {
+    QuerySet!T filter(Args...)(Args criteria) {
         auto newQs = this;
         foreach (crit; criteria) {
             string field;
@@ -49,7 +50,10 @@ struct QuerySet(T) {
                     clause = field ~ " = ?";
                     break;
                 case "iexact":
-                    clause = field ~ " = ?";
+                    /// (carter): COLLATE is sqlite specific iirc.
+                    /// (carter): for psql etc would want 
+                    /// (carter):     WHERE column ILIKE '%?%'
+                    clause = field ~ " COLLATE NOCASE = ?";
                     param = toLower(param.toString());
                     break;
                 case "contains":

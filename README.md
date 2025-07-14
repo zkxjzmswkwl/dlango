@@ -27,12 +27,6 @@ struct User {
     string email;
     string password;
     long createdAt;
-
-    this (string username, string email, string password) {
-        this.username = username;
-        this.email = email;
-        this.password = password;
-    }
 }
 ```
 
@@ -42,9 +36,10 @@ Once you run `makemigrations` and `migrate`, the schema is in place. Migrations 
 ```d
 User("retrac", "retrac@gmail.com", "password").save();
 
-auto filtered = User.objects.filter([
-	Q("email__iexact", "RETRAC@gmail.com")
-]);
+auto filtered = User.objects.filter(
+	Q("email__iexact", "RETRAC@gmail.com"),
+  Q("username__exact", "retrac")
+);
 
 foreach (user; filtered) {
 	writeln(user.username, " ", user.email, " ", user.ID);

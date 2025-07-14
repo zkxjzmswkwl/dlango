@@ -36,7 +36,7 @@ T[] hydrate(T)(ResultRange rows) {
         return results;
     }
 
-    auto colCount = rows.columnCount;
+    immutable colCount = rows.columnCount;
 
     foreach(row; rows) {
         T item;
