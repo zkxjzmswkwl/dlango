@@ -37,7 +37,7 @@ Once you run `makemigrations` and `migrate`, the schema is in place. Migrations 
 User("retrac", "retrac@gmail.com", "password").save();
 
 auto filtered = User.objects.filter(
-	Q("email__iexact", "RETRAC@gmail.com"),
+  Q("email__iexact", "RETRAC@gmail.com"),
   Q("username__exact", "retrac")
 );
 
