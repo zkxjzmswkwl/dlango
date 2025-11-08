@@ -13,5 +13,11 @@
 			"path": "/Users/cartersmith/personal/dlango"
 		},
 		"d2sqlite3": "~>0.11.0"
-	}
+	},
+	"libs": [
+		"sqlite3"
+	],
+	"libPaths": [
+		"."
+	]
 }

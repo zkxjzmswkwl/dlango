@@ -12,6 +12,10 @@ import asdf;
 import std.json;
 import std.format : formattedWrite;
 
+string normalizePathForDub(string path) {
+    return path.replace("\\", "/");
+}
+
 string generateRunnerSource(string projectRoot) {
 	auto migrationsDir = buildPath(projectRoot, "source", "migrations");
 	auto manifestPath = buildPath(migrationsDir, "manifest");
@@ -68,7 +72,10 @@ import d2sqlite3;
 import settings.db;
 
 void main() {
-	auto db_ptr = settings.db.getDbConnection();
+	static Database* db_ptr;
+	if (db_ptr is null) {
+		db_ptr = new Database(settings.db.DB_PATH);
+	}
 
 	db_ptr.execute(`
 		CREATE TABLE IF NOT EXISTS dlango_migrations (
@@ -126,7 +133,14 @@ void migrate() {
 	writeln("Running migrate command...");
 	auto projectRoot = getcwd();
 
-    string dlangoPath = "/Users/cartersmith/personal/dlango";
+	string dlangoPath;
+	version (Windows) {
+		dlangoPath = "C:\\Users\\dev\\personal\\dlango";
+	}
+	else {
+		dlangoPath = "/Users/cartersmith/personal/dlango";
+	}
+    dlangoPath = normalizePathForDub(dlangoPath);
     writeln("Using dlango framework from: ", dlangoPath);
 
 	auto tmpDir = buildPath(projectRoot, ".dlango_tmp");
@@ -138,6 +152,14 @@ void migrate() {
 	mkdirRecurse(tmpDir);
     mkdir(buildPath(tmpDir, "source"));
 
+	auto sqlite3LibPath = buildPath(projectRoot, "sqlite3.lib");
+	string sqlite3LibDirPath = "";
+	if (exists(sqlite3LibPath)) {
+		auto absPath = absolutePath(sqlite3LibPath);
+		auto libDir = dirName(absPath);
+		sqlite3LibDirPath = normalizePathForDub(libDir);
+	}
+
 	auto runnerSource = generateRunnerSource(projectRoot);
 	if (runnerSource is null) {
 		return;
@@ -147,7 +169,20 @@ void migrate() {
 
     auto recipePath = buildPath(tmpDir, "dub.sdl");
     auto recipeContent = appender!string();
-    formattedWrite(recipeContent, `name "_internal_runner"
+    if (sqlite3LibDirPath.length > 0) {
+		formattedWrite(recipeContent, `name "_internal_runner"
+targetType "executable"
+mainSourceFile "source/app.d"
+dependency "dlango" path="%s"
+dependency "asdf" version="~>0.7.17"
+dependency "d2sqlite3" repository="git+https://github.com/zkxjzmswkwl/d2sqlite3.git" version="~v1.x.x"
+sourcePaths "source" "../source"
+excludedSourceFiles "../source/app.d"
+libs "sqlite3"
+lflags "/LIBPATH:%s"
+`, dlangoPath, sqlite3LibDirPath);
+	} else {
+		formattedWrite(recipeContent, `name "_internal_runner"
 targetType "executable"
 mainSourceFile "source/app.d"
 dependency "dlango" path="%s"
@@ -156,6 +191,7 @@ dependency "d2sqlite3" repository="git+https://github.com/zkxjzmswkwl/d2sqlite3.
 sourcePaths "source" "../source"
 excludedSourceFiles "../source/app.d"
 `, dlangoPath);
+	}
     
     std.file.write(recipePath, recipeContent.data);
 

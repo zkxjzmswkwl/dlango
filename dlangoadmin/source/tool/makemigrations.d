@@ -9,6 +9,12 @@ import std.format;
 import std.array;
 import asdf;
 import std.json;
+import std.algorithm;
+import std.process;
+
+string normalizePathForDub(string path) {
+    return path.replace("\\", "/");
+}
 
 enum MAKEMIGRATIONS_MAIN_TEMPLATE = q{
 /+ dub.sdl:
@@ -29,10 +35,10 @@ import std.path;
 import orm.schema;
 import orm.models;
 import orm.intro;
-import asdf; // General asdf import
+import asdf;
 
-import models; // Assumes user models are in a 'models' package
-import settings.db; // To ensure settings are valid
+import models;
+import settings.db;
 
 alias SchemaChange = Algebraic!(CreateTable, AddColumn);
 
@@ -84,7 +90,7 @@ void main(string[] args) {
             if (fieldName !in snapshotModel.fields) {
                 changes ~= SchemaChange(AddColumn(tableName, fieldName, fieldSchema));
             }
-            // TODO: Add detection for changed and removed fields
+            // TODO: changed  or removed fields aren't accounted for :)
         }
     }
 
@@ -102,7 +108,7 @@ void main(string[] args) {
             try {
                 auto numStr = baseName(entry.name).split('_')[0];
                 if (numStr.startsWith("m")) {
-                    numStr = numStr[1..$]; // remove the 'm' prefix before converting to long
+                    numStr = numStr[1..$]; 
                 }
                 lastMigrationNum = max(lastMigrationNum, to!long(numStr));
             } catch (Exception e) { /* Ignore files that don't match the format */ }
@@ -150,7 +156,7 @@ void main(string[] args) {
     writeln("Generated migration: ", migrationPath);
 
     auto manifestPath = buildPath(migrationDir, "manifest");
-    auto manifestFile = File(manifestPath, "a"); // Append mode creates if not exists
+    auto manifestFile = File(manifestPath, "a"); 
     manifestFile.writeln(migrationModuleName);
     manifestFile.close();
     writeln("Updated manifest file.");
@@ -165,7 +171,48 @@ void makeMigrationsEntry(string name)
 	writeln("Running makemigrations command...");
 	auto projectRoot = getcwd();
 
-    string dlangoPath = "/Users/cartersmith/personal/dlango";
+    string dlangoPath;
+    if (environment.get("DLANGO_PATH") !is null) {
+        dlangoPath = environment.get("DLANGO_PATH");
+    } else {
+        bool found = false;
+        
+        try {
+            import std.file : thisExePath;
+            auto exePath = thisExePath();
+            auto exeDir = dirName(exePath);
+            auto potentialDlangoPath = buildPath(exeDir, "..");
+            potentialDlangoPath = absolutePath(potentialDlangoPath);
+            if (exists(buildPath(potentialDlangoPath, "dub.json")) || 
+                exists(buildPath(potentialDlangoPath, "source", "dlango"))) {
+                dlangoPath = potentialDlangoPath;
+                found = true;
+            }
+        } catch (Exception e) { }
+        
+        if (!found) {
+            try {
+                auto parentDir = dirName(projectRoot);
+                auto potentialDlangoPath = buildPath(parentDir, "dlango");
+                if (exists(buildPath(potentialDlangoPath, "dub.json")) || 
+                    exists(buildPath(potentialDlangoPath, "source", "dlango"))) {
+                    dlangoPath = potentialDlangoPath;
+                    found = true;
+                }
+            } catch (Exception e) { }
+        }
+        
+        if (!found) {
+            version (Windows) {
+                dlangoPath = "C:\\Users\\dev\\personal\\dlango";
+            }
+            else {
+                dlangoPath = "/Users/cartersmith/personal/dlango";
+            }
+        }
+    }
+    
+    dlangoPath = normalizePathForDub(dlangoPath);
 
 	auto tmpDir = buildPath(projectRoot, ".dlango_tmp");
 	scope (exit)
@@ -178,18 +225,44 @@ void makeMigrationsEntry(string name)
 	mkdirRecurse(tmpDir);
     mkdir(buildPath(tmpDir, "source"));
 
+	auto sqlite3LibPath = buildPath(projectRoot, "sqlite3.lib");
+	string sqlite3LibDirPath = "";
+	if (exists(sqlite3LibPath)) {
+		auto absPath = absolutePath(sqlite3LibPath);
+		auto libDir = dirName(absPath);
+		sqlite3LibDirPath = normalizePathForDub(libDir);
+	}
+
 	auto mainPath = buildPath(tmpDir, "source", "app.d");
 	std.file.write(mainPath, MAKEMIGRATIONS_MAIN_TEMPLATE);
 
     auto recipePath = buildPath(tmpDir, "dub.sdl");
     auto recipeContent = appender!string();
-    formattedWrite(recipeContent, `name "_internal_runner"
+    if (sqlite3LibDirPath.length > 0) {
+		formattedWrite(recipeContent, `name "_internal_runner"
 targetType "executable"
+mainSourceFile "source/app.d"
 dependency "dlango" path="%s"
 dependency "asdf" version="~>0.7.17"
 dependency "d2sqlite3" repository="git+https://github.com/zkxjzmswkwl/d2sqlite3.git" version="~v1.x.x"
-importPaths "source" "%s"
-`, dlangoPath, buildPath(projectRoot, "source"));
+sourcePaths "source" "../source"
+importPaths "source" "../source"
+excludedSourceFiles "../source/app.d"
+libs "sqlite3"
+lflags "/LIBPATH:%s"
+`, dlangoPath, sqlite3LibDirPath);
+	} else {
+		formattedWrite(recipeContent, `name "_internal_runner"
+targetType "executable"
+mainSourceFile "source/app.d"
+dependency "dlango" path="%s"
+dependency "asdf" version="~>0.7.17"
+dependency "d2sqlite3" repository="git+https://github.com/zkxjzmswkwl/d2sqlite3.git" version="~v1.x.x"
+sourcePaths "source" "../source"
+importPaths "source" "../source"
+excludedSourceFiles "../source/app.d"
+`, dlangoPath);
+	}
     
     std.file.write(recipePath, recipeContent.data);
 
