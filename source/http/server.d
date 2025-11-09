@@ -3,7 +3,6 @@ module http.server;
 import std.socket;
 import std.array;
 import std.stdio;
-import std.logger;
 import std.parallelism;
 import std.conv : to;
 import std.algorithm.searching : canFind;
@@ -24,19 +23,17 @@ class HttpServer {
     this(RequestHandler[string] routes) {
         this.routes = routes;
         this.socket = new TcpSocket();
-        this.socket.bind(new InternetAddress("127.0.0.1", 8081));
+        this.socket.bind(new InternetAddress("127.0.0.1", 8190));
         this.socket.listen(10);
-        info("Server is running on http://127.0.0.1:8081 (in synchronous debug mode)");
         
         while (true) {
             try {
                 Socket client = this.socket.accept();
-                info("con from ", client.remoteAddress().toString());
 
                 this.handleClient(client);
 
             } catch (SocketException e) {
-                error("failed: ", e.msg);
+                writeln("failed: ", e.msg);
             }
         }
     }
@@ -72,11 +69,18 @@ class HttpServer {
             case "GET":  method = HttpRequest.Method.GET; break;
             case "POST": method = HttpRequest.Method.POST; break;
             case "PUT":  method = HttpRequest.Method.PUT; break;
+            case "OPTIONS": method = HttpRequest.Method.OPTIONS; break;
             default: return ParsedInfo(null, null);
         }
         
         auto httpRequest = new HttpRequest(method, path, httpVersion, headers);
         return ParsedInfo(httpRequest, methodStr);
+    }
+
+    private void addCorsHeaders(HttpResponse response) {
+        response.addHeader("Access-Control-Allow-Origin", "*");
+        response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS");
+        response.addHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With");
     }
 
     private void handleClient(Socket client) {
@@ -87,8 +91,8 @@ class HttpServer {
             while (true) {
                 auto bytesReceived = client.receive(tempBuffer);
                 if (bytesReceived == 0 || bytesReceived == Socket.ERROR) {
-                    if (bytesReceived == 0) info("disconnected.");
-                    else error("recv error.");
+                    if (bytesReceived == 0) writeln("disc");
+                    else writeln("recv error.");
                     client.close();
                     return;
                 }
@@ -111,26 +115,46 @@ class HttpServer {
 
             if (request is null) {
                 auto badRequestResponse = new HttpResponse(BAD_REQUEST, null, "<h1>400 Bad Request</h1>");
+                addCorsHeaders(badRequestResponse);
                 client.send(badRequestResponse.serialize());
                 client.close();
                 return;
             }
 
-            if (request.path in routes) {
-                 auto response = this.routes[request.path](request);
+            if (request.method == HttpRequest.Method.OPTIONS) {
+                Headers corsHeaders;
+                corsHeaders["Access-Control-Allow-Origin"] = "*";
+                corsHeaders["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, PATCH, OPTIONS";
+                corsHeaders["Access-Control-Allow-Headers"] = "Content-Type, Authorization, X-Requested-With";
+                corsHeaders["Access-Control-Max-Age"] = "86400";
+                auto optionsResponse = new HttpResponse(OK, corsHeaders, "");
+                client.send(optionsResponse.serialize());
+                client.close();
+                return;
+            }
+
+            string routePath = request.path;
+            auto qpos = routePath.indexOf('?');
+            if (qpos != -1) {
+                routePath = routePath[0 .. qpos];
+            }
+            
+            if (routePath in routes) {
+                 auto response = this.routes[routePath](request);
+                 addCorsHeaders(response);
                  client.send(response.serialize());
             } else {
                 Headers headers;
                 headers["Content-Type"] = "text/html; charset=utf-8";
                 auto notFoundResponse = new HttpResponse(NOT_FOUND, headers, "<h1>404 Not Found</h1>");
+                addCorsHeaders(notFoundResponse);
                 client.send(notFoundResponse.serialize());
             }
 
         } catch (Exception e) {
-            error("error: ", e.msg);
+            writeln("error: ", e.msg);
         } finally {
             if (client.isAlive) {
-                info("closing.");
                 client.close();
             }
         }

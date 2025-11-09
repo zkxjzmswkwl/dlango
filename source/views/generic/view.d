@@ -1,8 +1,8 @@
 module views.generic.view;
 
-import std.logger;
 import http.request;
 import views.generic.errors;
+import std.stdio;
 
 class View {
     private string path;
@@ -13,7 +13,7 @@ class View {
         this.allowedMethods = allowedMethods;
 
         if (allowedMethods.length == 0) {
-            warning(ViewErrors.NO_ALLOWED_METHODS, path);
+            writeln(ViewErrors.NO_ALLOWED_METHODS, path);
         }
     }
     // void dispatch()

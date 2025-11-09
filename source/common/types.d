@@ -12,7 +12,7 @@ alias RequestHandler = HttpResponse function(HttpRequest request);
 string toString(Headers headers) {
     string result = "";
     foreach (key, value; headers) {
-        result ~= key ~ ": " ~ value;
+        result ~= key ~ ": " ~ value ~ "\r\n";
     }
     return result;
 }

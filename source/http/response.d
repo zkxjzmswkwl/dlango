@@ -1,6 +1,7 @@
 module http.response;
 
 import std.conv : to;
+import std.string;
 import common.types;
 
 
@@ -32,7 +33,19 @@ class HttpResponse {
         this.body = body;
     }
 
+    public void addHeader(string key, string value) {
+        if (this.headers is null) {
+            this.headers = new Headers();
+        }
+        this.headers[key] = value;
+    }
+
     public string serialize() {
-        return "HTTP/1.1 " ~ status.toString() ~ "\r\n" ~ headers.toString() ~ "\r\n" ~ body;
+        Headers headersToSerialize = this.headers;
+        if (headersToSerialize is null) {
+            headersToSerialize = new Headers();
+        }
+        return "HTTP/1.1 " ~ status.toString() ~ "\r\n" ~ headersToSerialize.toString() ~ "\r\n" ~ body;
     }
 }
+

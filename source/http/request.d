@@ -3,6 +3,8 @@ module http.request;
 import common.types;
 import std.conv : to;
 import std.format;
+import std.algorithm;
+import std.array;
 
 class HttpRequest {
     private Encoding encoding;
@@ -19,7 +21,7 @@ class HttpRequest {
         HEAD,
         TRACE
     }
-    private Method method;
+    private Method _method;
     private string httpVersion;
     // temporary
     private ubyte[] body;
@@ -31,7 +33,7 @@ class HttpRequest {
     private string[string] getData;
 
     this(Method method, string path, string httpVersion, Headers headers) {
-        this.method = method;
+        this._method = method;
         this._path = path;
         this.httpVersion = httpVersion;
         this._headers = headers;
@@ -53,7 +55,33 @@ class HttpRequest {
     string[string] form() { return this.postData; }
 
     @property
-    string[string] urlQuery() { return this.getData; }
+    Method method() { return this._method; }
+
+    @property
+    string[string] urlQuery() {
+        import std.string : indexOf;
+        if (this.getData.empty) {
+            string[string] params;
+            auto qpos = this.path.indexOf('?');
+            if (qpos == -1)
+                return params;
+
+            string query = this.path[qpos + 1 .. $];
+            foreach (pair; query.split('&')) {
+                if (pair.length == 0)
+                    continue;
+
+                auto kv = pair.split('=');
+                string key = kv[0];
+                string value = kv.length > 1 ? kv[1] : "";
+
+                params[key] = value;
+            }
+
+            this.getData = params;
+        }
+        return this.getData;
+    }
 
     override string toString() {
         return "HttpRequest(method: %s, path: %s, httpVersion: %s, body: %s)".format(this.method,
